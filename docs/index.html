@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lini's Bites Tracker</title>
+<style>:root{--bg:#fff;--fg:#222;--c:#f3f3f3;--ok:#1a7f37;--no:#8a8a8a}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--c:#242424;--ok:#4cc26a}}
+body{font:16px system-ui,sans-serif;background:var(--bg);color:var(--fg);padding:16px;max-width:640px;margin:auto}
+.card{background:var(--c);border-radius:12px;padding:12px;margin:10px 0}.ok{color:var(--ok);font-weight:600}.no{color:var(--no)}
+small{opacity:.7}a{color:inherit}</style></head><body>
+<h2>🍫 Lini's Bites München</h2><small id="u"></small>
+<h3>dm</h3><div id="dm">lädt…</div><h3>Rossmann</h3><div id="rm">lädt…</div><h3>Weitere Links</h3><div id="ro"></div>
+<script>
+const hit=s=>Object.values(s.items||{}).some(i=>i.inStock);
+function render(list,err,extra){
+ let h=err?'<p class="no">Abfrage fehlgeschlagen: '+err+'</p>':'';
+ const hits=list.filter(hit);
+ if(!err)h+=hits.length?'<p class="ok">'+hits.length+' Filiale(n) mit Treffer</p>':'<p class="no">Aktuell nirgends verfügbar.</p>';
+ [...hits,...list.filter(s=>!hit(s))].forEach(s=>{
+  h+='<div class="card"><b>'+s.name+'</b> <small>'+(s.dist==null?'':s.dist+' km')+(s.pickup?' · Abholstation':'')+'</small><br>'+
+  Object.entries(s.items||{}).map(([n,i])=>'<span class="'+(i.inStock?'ok':'no')+'">'+(i.inStock?'✔ ':'✘ ')+n+(i.text&&i.inStock?' ('+i.text+')':'')+'</span>').join(' · ')+'</div>'});
+ return h+(extra||'')}
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
+ u.textContent='dm-Stand: '+new Date(d.updated).toLocaleString('de-DE');
+ const un=d.dm_unmatched&&d.dm_unmatched.length?'<p class="no"><small>Nicht gefunden: '+d.dm_unmatched.join(', ')+'</small></p>':'';
+ dm.innerHTML=render(d.dm,d.dm_error,un);
+ ro.innerHTML=Object.entries(d.links).map(([n,l])=>'<div class="card"><a href="'+l+'">'+n+'</a></div>').join('')});
+fetch('rossmann.json?'+Date.now()).then(r=>r.json()).then(d=>{
+ const m={};
+ d.products.forEach(p=>{p.stores.forEach(s=>{const k=s.street;m[k]=m[k]||{name:'Rossmann '+s.street,items:{},pickup:s.pickup};
+  m[k].items[p.name]={inStock:s.inStock,text:(s.text.match(/(\d+\+? Stück)/)||[])[1]}})});
+ const miss=d.products.filter(p=>p.missing.length).map(p=>p.name+': '+p.missing.join(', '));
+ rm.innerHTML=render(Object.values(m),d.error,miss.length?'<p class="no"><small>Nicht in der Liste: '+miss.join(' | ')+'</small></p>':'')})
+ .catch(()=>{rm.innerHTML='<p class="no">Noch keine Rossmann-Daten.</p>'});
+</script></body></html>
