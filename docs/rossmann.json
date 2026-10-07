@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T20:38:45.164140Z",
+ "updated": "2026-10-07T20:52:40.795523Z",
  "products": [
   {
    "name": "pralinis white raspberry cake",
@@ -11,7 +11,8 @@
     "Senftlstr. 19",
     "Rumfordstr. 10",
     "Pilgersheimerstr. 4"
-   ]
+   ],
+   "dialog": "Wenn Sie auf „Alle Cookies akzeptieren“ klicken, stimmen Sie der Speicherung von Cookies oder ähnliche Funktionen wie Pixel, Tags oder Web-Beacon (im Weiteren: Cookies) auf Ihrem Gerät zu, um die Websitenavigation zu verbessern, die Websitenutzung zu analysieren und unsere Marketingbemühungen (bspw. personalisierte Anzeigen) zu unterstützen. Wenn sie auf „Alle Ablehnen“ klicken, werden allein unbedingt erforderliche Cookies verwendet. Ihre Einwilligung können Sie unter „Cookie-Einstellungen“ ind"
   },
   {
    "name": "pralinis hazelnut cream cake",
@@ -62,5 +63,123 @@
    ]
   }
  ],
- "error": null
+ "error": null,
+ "net": [
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406370271&_gaz=1&gcs=G111&gcd=13r3r3r3r5l1"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229836"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718za20gzb79051492zd79051492xf1&_p=1791406370271&gcs=G111&gcd=13r3r3r3r5l1&npa=0&dma=0&_eu="
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229836"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229836"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406430131&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406430131&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718za20gzb79051492zd79051492xf1&_p=1791406430131&_gaz=1&gcs=G111&gcd=13r3r3r3r5l1&npa=0&dma"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229850"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229850"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=229850"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406495474&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406495474&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718za20gzb79051492zd79051492xf1&_p=1791406495474&_gaz=1&gcs=G111&gcd=13r3r3r3r5l1&npa=0&dma"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=213111"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=213111"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=213111"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406560740&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406560740&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718za20gzb79051492zd79051492xf1&_p=1791406560740&_gaz=1&gcs=G111&gcd=13r3r3r3r5l1&npa=0&dma"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=199589"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=199589"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=199589"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406626301&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718z879051492za20gzb79051492zd79051492xf1&_p=1791406626301&gcs=G111&gcd=13r3r3r3r5l1&npa=0&"
+  ],
+  [
+   204,
+   "https://analytics.google.com/g/collect?v=2&tid=G-9VYK691E0Y&gtm=45je6a60v881706718za20gzb79051492zd79051492xf1&_p=1791406626301&_gaz=1&gcs=G111&gcd=13r3r3r3r5l1&npa=0&dma"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=194850"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=194850"
+  ],
+  [
+   406,
+   "https://www.rossmann.de/storefinder/.rest/store?q=80336+M%C3%BCnchen&dan=194850"
+  ]
+ ]
 }

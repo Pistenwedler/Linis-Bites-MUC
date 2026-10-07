@@ -1,16 +1,43 @@
 {
- "updated": "2026-10-07T20:38:01.282299Z",
+ "updated": "2026-10-07T20:49:03.896133Z",
  "dm": [],
- "dm_error": "<HTTPError 400: 'Bad Request'>",
- "dm_unmatched": [],
+ "dm_error": "<HTTPError 404: 'Not Found'>",
+ "dm_unmatched": [
+  "dm Tübinger Straße 3e",
+  "dm Plinganserstraße 33"
+ ],
  "links": {
   "Rossmann: alle Lini's Bites": "https://www.rossmann.de/de/alle-marken/linis-bites/c/online-dachmarke_17644792",
   "Edeka Marktsuche (kein Bestand abrufbar)": "https://www.edeka.de/marktsuche.jsp",
   "Alnatura Marktfinder (kein Bestand abrufbar)": "https://www.alnatura.de/de-de/maerkte/marktfinder/"
  },
  "dm_products": {
-  "3121779": "Vanilla Cookie",
-  "3121805": "Carrot Cake",
-  "3121823": "Tiramisu"
- }
+  "1714108": "Raspberry Almond",
+  "2975242": "Salted Pistachio",
+  "1714169": "Salted Peanut Butter",
+  "1714136": "Creamy Coconut",
+  "3121823": "Tiramisu",
+  "3105015": "Matcha Raspberry",
+  "3121815": "White Hazelnut"
+ },
+ "dm_debug": [
+  [
+   "ok",
+   "https://product-search.services.dmtech.com/de/search/static?query=lini%27s+bites+pralinis&pageSize=40"
+  ],
+  [
+   400,
+   "https://store-data-service.services.dmtech.com/stores/bbox/48.06193,11.45849,48.20607,11.67471",
+   "{\"detail\":\"Failed to convert 'boundingBox' with value: '48.06193,11.45849,48.20607,11.67471'\",\"instance\":\"/stores/bbox/48.06193,11.45849,48.20607,11.67471\",\"status\":400,\"title\":\"Bad Request\"}"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/nearby/48.13400,11.56660/8?countryCode=DE"
+  ],
+  [
+   404,
+   "https://products.dm.de/store-availability/DE/availability?dans=1714108%2C2975242%2C1714169%2C1714136%2C3121823%2C3105015%2C3121815&storeNumbers=1917%2C2661%2C2528%2C237%2",
+   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Wed Oct 07 20:49:06 UTC 2026</div><div>[d0c3e032-"
+  ]
+ ]
 }
