@@ -1,5 +1,5 @@
 """dm-Filialverfuegbarkeit fuer die Laeden aus stores.json -> docs/data.json"""
-import json, math, re, datetime, urllib.request, urllib.parse, sys
+import json, math, re, datetime, urllib.request, urllib.parse, urllib.error, sys
 
 CENTER = (48.1340, 11.5666)  # Sendlinger Tor, nur fuer Entfernungsanzeige/Suchgebiet
 DM_BRAND_URL = "https://www.dm.de/marken/linis-bites-2349676"
@@ -15,7 +15,14 @@ def fetch(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
         return r.read().decode("utf-8", "replace")
 
-def get(url): return json.loads(fetch(url))
+DEBUG = []
+def get(url):
+    try:
+        data = json.loads(fetch(url)); DEBUG.append(["ok", url[:170]]); return data
+    except urllib.error.HTTPError as e:
+        DEBUG.append([e.code, url[:170], e.read().decode("utf-8", "replace")[:200]]); raise
+    except Exception as e:
+        DEBUG.append(["err", url[:170], repr(e)[:150]]); raise
 
 def norm(s):
     s = str(s).lower().replace("ß", "ss")
@@ -27,8 +34,22 @@ def km(lat, lng):
     a = 0.5 - math.cos((lat-la)*p)/2 + math.cos(la*p)*math.cos(lat*p)*(1-math.cos((lng-lo)*p))/2
     return 12742 * math.asin(math.sqrt(a))
 
-def dm_products():
+def dm_search():
     prods = {}
+    try:
+        res = get("https://product-search.services.dmtech.com/de/search/static?" +
+                  urllib.parse.urlencode({"query": "lini's bites pralinis", "pageSize": 40}))
+        for p in res.get("products", []):
+            dan = p.get("dan") or p.get("dmid"); t = str(p.get("title") or p.get("name") or "")
+            if dan and "lini" in (str(p.get("brandName", "")) + t).lower() and "pralini" in t.lower():
+                prods[str(dan)] = re.sub(r"Lini.s Bites|Pralinis|,\s*\d+ g", "", t).strip() or str(dan)
+    except Exception as e:
+        print("dm Suche:", e, file=sys.stderr)
+    return prods
+
+def dm_products():
+    prods = dm_search()
+    if prods: return prods
     try:
         html = fetch(DM_BRAND_URL)
         for dan in dict.fromkeys(re.findall(r"/p/d/(\d{5,8})", html)):
@@ -43,8 +64,18 @@ def dm_products():
 def dm_stores(wanted):
     d = 8 / 111.0  # ~8 km Suchgebiet, damit alle Laeden sicher drin sind
     la, lo = CENTER
-    data = get(f"https://store-data-service.services.dmtech.com/stores/bbox/{la-d},{lo-d*1.5},{la+d},{lo+d*1.5}")
-    stores = data.get("stores", data) if isinstance(data, dict) else data
+    stores = []
+    for url in (
+        f"https://store-data-service.services.dmtech.com/stores/bbox/{la-d:.5f},{lo-d*1.5:.5f},{la+d:.5f},{lo+d*1.5:.5f}",
+        f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/8?countryCode=DE",
+        f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/8000?countryCode=DE",
+    ):
+        try:
+            data = get(url)
+            stores = data.get("stores", data) if isinstance(data, dict) else data
+            if stores: break
+        except Exception: continue
+    if not stores: raise RuntimeError("keine dm-Filialliste abrufbar (siehe dm_debug)")
     found, unmatched = [], []
     for w in wanted:
         hit = None
@@ -80,5 +111,6 @@ if __name__ == "__main__":
         r["dm"] = dm_availability(stores, prods) if stores else []
     except Exception as e:
         r["dm_error"] = repr(e); print("dm Fehler:", e, file=sys.stderr)
+    r["dm_debug"] = DEBUG[-12:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
     print(len(r["dm"]), "dm-Filialen geprüft; nicht zugeordnet:", r["dm_unmatched"])
