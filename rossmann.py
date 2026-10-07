@@ -30,7 +30,13 @@ def search(page, q):
                 "input[placeholder*='PLZ' i]", "input[placeholder*='Ort' i]", "input[name*='plz' i]"):
         try:
             box = page.locator(sel).first
-            box.fill(q, timeout=3000); box.press("Enter"); page.wait_for_timeout(3500); return True
+            box.click(timeout=3000); box.press("Control+A"); box.press("Backspace")
+            box.press_sequentially(q, delay=70)
+            try: page.locator("[role=dialog]").get_by_role("button", name=re.compile(r"Filiale finden", re.I)).first.click(timeout=2000)
+            except Exception:
+                try: page.get_by_role("button", name=re.compile(r"Filiale finden", re.I)).last.click(timeout=2000)
+                except Exception: box.press("Enter")
+            page.wait_for_timeout(5000); return True
         except Exception: continue
     return False
 
@@ -65,6 +71,10 @@ def check(page, url, wanted, query, first):
             for w in wanted:
                 if norm(w["street"]) == norm(t["street"]): found[norm(w["street"])] = t
     collect()
+    if first:
+        page.screenshot(path="docs/debug-rossmann-1.png")
+        try: res["dialog"] = page.locator("[role=dialog]").first.inner_text(timeout=2000)[:500]
+        except Exception: pass
     for _ in range(2):  # bis zu 2 Zusatzsuchen fuer fehlende Laeden
         miss = [w for w in wanted if norm(w["street"]) not in found]
         if not miss: break
@@ -76,16 +86,20 @@ def check(page, url, wanted, query, first):
 
 if __name__ == "__main__":
     cfg = json.load(open("stores.json"))
+    net = []
     out = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "products": [], "error": None}
     try:
         with sync_playwright() as p:
             b = p.chromium.launch(headless=not os.environ.get("SHOW"))
             page = b.new_context(locale="de-DE", viewport={"width": 1280, "height": 1600}).new_page()
+            page.on("response", lambda r: net.append([r.status, r.url[:170]]) if len(net) < 40 and
+                    r.request.resource_type in ("xhr", "fetch") and re.search(r"filial|store|market|availab|geo|search|location", r.url, re.I) else None)
             for n, u in enumerate(product_links(page)[:15]):
                 out["products"].append(check(page, u, cfg["rossmann"], cfg["rossmann_search"], n == 0))
             b.close()
         if not out["products"]: out["error"] = "Keine Produkte auf der Markenseite gefunden"
     except Exception as e:
         out["error"] = repr(e); print("Rossmann Fehler:", e, file=sys.stderr)
+    out["net"] = net
     json.dump(out, open("docs/rossmann.json", "w"), ensure_ascii=False, indent=1)
     print(len(out["products"]), "Rossmann-Produkte geprüft")
