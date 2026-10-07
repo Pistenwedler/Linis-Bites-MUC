@@ -1,0 +1,22 @@
+{
+  "dm": [
+    {"street": "Tegernseer Landstr.", "no": "64", "plz": "81541"},
+    {"street": "Kühbachstraße", "no": "3-9", "plz": "81543"},
+    {"street": "Klenzestraße", "no": "52a", "plz": "80469"},
+    {"street": "Lindwurmstraße", "no": "95", "plz": "80337"},
+    {"street": "Sendlinger-Tor-Platz", "no": "11", "plz": "80336"},
+    {"street": "Goethestraße", "no": "30", "plz": "80336"},
+    {"street": "Theresienhöhe", "no": "5", "plz": "80339"},
+    {"street": "Westendstraße", "no": "98", "plz": "80339"},
+    {"street": "Tübinger Straße", "no": "3e", "plz": "80686"},
+    {"street": "Plinganserstraße", "no": "33", "plz": "81369"}
+  ],
+  "rossmann": [
+    {"street": "Theresienhöhe 12", "plz": "80339"},
+    {"street": "Schwanthalerstr. 27", "plz": "80336"},
+    {"street": "Senftlstr. 19", "plz": "81541"},
+    {"street": "Rumfordstr. 10", "plz": "80469"},
+    {"street": "Pilgersheimerstr. 4", "plz": "81543"}
+  ],
+  "rossmann_search": "80336 München"
+}
