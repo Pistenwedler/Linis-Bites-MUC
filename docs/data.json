@@ -1,0 +1,16 @@
+{
+ "updated": "2026-10-07T20:38:01.282299Z",
+ "dm": [],
+ "dm_error": "<HTTPError 400: 'Bad Request'>",
+ "dm_unmatched": [],
+ "links": {
+  "Rossmann: alle Lini's Bites": "https://www.rossmann.de/de/alle-marken/linis-bites/c/online-dachmarke_17644792",
+  "Edeka Marktsuche (kein Bestand abrufbar)": "https://www.edeka.de/marktsuche.jsp",
+  "Alnatura Marktfinder (kein Bestand abrufbar)": "https://www.alnatura.de/de-de/maerkte/marktfinder/"
+ },
+ "dm_products": {
+  "3121779": "Vanilla Cookie",
+  "3121805": "Carrot Cake",
+  "3121823": "Tiramisu"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "updated": "2026-10-07T20:38:45.164140Z",
+ "products": [
+  {
+   "name": "pralinis white raspberry cake",
+   "url": "https://www.rossmann.de/de/lebensmittel-linis-bites-bio-pralinis-white-raspberry-cake/p/4260717843482",
+   "stores": [],
+   "missing": [
+    "Theresienhöhe 12",
+    "Schwanthalerstr. 27",
+    "Senftlstr. 19",
+    "Rumfordstr. 10",
+    "Pilgersheimerstr. 4"
+   ]
+  },
+  {
+   "name": "pralinis hazelnut cream cake",
+   "url": "https://www.rossmann.de/de/lebensmittel-linis-bites-bio-pralinis-hazelnut-cream-cake/p/4260717843499",
+   "stores": [],
+   "missing": [
+    "Theresienhöhe 12",
+    "Schwanthalerstr. 27",
+    "Senftlstr. 19",
+    "Rumfordstr. 10",
+    "Pilgersheimerstr. 4"
+   ]
+  },
+  {
+   "name": "tiramisu pralinis",
+   "url": "https://www.rossmann.de/de/lebensmittel-linis-bites-bio-tiramisu-pralinis/p/4260717842140",
+   "stores": [],
+   "missing": [
+    "Theresienhöhe 12",
+    "Schwanthalerstr. 27",
+    "Senftlstr. 19",
+    "Rumfordstr. 10",
+    "Pilgersheimerstr. 4"
+   ]
+  },
+  {
+   "name": "pralinis salted pistachio",
+   "url": "https://www.rossmann.de/de/lebensmittel-linis-bites-bio-pralinis-salted-pistachio/p/4260717841587",
+   "stores": [],
+   "missing": [
+    "Theresienhöhe 12",
+    "Schwanthalerstr. 27",
+    "Senftlstr. 19",
+    "Rumfordstr. 10",
+    "Pilgersheimerstr. 4"
+   ]
+  },
+  {
+   "name": "pralinis matcha raspberry",
+   "url": "https://www.rossmann.de/de/lebensmittel-linis-bites-bio-pralinis-matcha-raspberry/p/4260717841365",
+   "stores": [],
+   "missing": [
+    "Theresienhöhe 12",
+    "Schwanthalerstr. 27",
+    "Senftlstr. 19",
+    "Rumfordstr. 10",
+    "Pilgersheimerstr. 4"
+   ]
+  }
+ ],
+ "error": null
+}
