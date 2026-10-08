@@ -1,4 +1,8 @@
-"""Rossmann: Filialbestand direkt ueber die Rossmann-Filialsuche (XML), kein Browser noetig -> docs/rossmann.json"""
+"""Rossmann: Filialbestand direkt ueber die Rossmann-Filialsuche (XML), kein Browser noetig -> docs/rossmann.json
+
+GEPARKT: Aus GitHub Actions blockiert Rossmann die Abfrage (Schutzseite statt XML). Vom Heimanschluss aus
+sollte es laufen: `python rossmann.py` im Repository-Ordner. Details siehe README, Abschnitt "Rossmann".
+"""
 import json, html, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
