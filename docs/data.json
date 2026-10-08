@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T07:53:06.220558Z",
+ "updated": "2026-10-08T07:54:37.822846Z",
  "dm": [
   {
    "id": "1917",
@@ -8,11 +8,6 @@
    "dist": 2.24,
    "items": {
     "Vanilla Cookie": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Carrot Cake": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -26,11 +21,6 @@
      "inStock": true,
      "level": null,
      "text": "22 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "67 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -65,11 +55,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -79,11 +64,6 @@
      "inStock": true,
      "level": null,
      "text": "25 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "28 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -118,11 +98,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -132,11 +107,6 @@
      "inStock": true,
      "level": null,
      "text": "12 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "23 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -171,11 +141,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -186,15 +151,10 @@
      "level": null,
      "text": "24 Stück"
     },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "18 Stück"
-    },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "5 Stück"
+     "text": "17 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -224,11 +184,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -237,12 +192,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "21 Stück"
+     "text": "28 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -277,11 +227,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -291,11 +236,6 @@
      "inStock": true,
      "level": null,
      "text": "16 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "20 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -330,11 +270,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -344,11 +279,6 @@
      "inStock": true,
      "level": null,
      "text": "14 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "4 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -383,11 +313,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -397,11 +322,6 @@
      "inStock": true,
      "level": null,
      "text": "14 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "17 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -436,11 +356,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -450,11 +365,6 @@
      "inStock": true,
      "level": null,
      "text": "15 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "12 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -489,11 +399,6 @@
      "level": null,
      "text": ""
     },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
     "Tiramisu": {
      "inStock": false,
      "level": null,
@@ -503,11 +408,6 @@
      "inStock": true,
      "level": null,
      "text": "24 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "30 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -559,7 +459,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 0.03,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "28 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -621,77 +521,6 @@
    "online": true
   },
   {
-   "name": "Salted Pistachio",
-   "tracked": true,
-   "count": 10,
-   "total": 10,
-   "stores": [
-    {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": true,
-     "text": "21 Stück"
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": true,
-     "text": "20 Stück"
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": true,
-     "text": "23 Stück"
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": true,
-     "text": "18 Stück"
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": true,
-     "text": "4 Stück"
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": true,
-     "text": "28 Stück"
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": true,
-     "text": "67 Stück"
-    },
-    {
-     "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": true,
-     "text": "17 Stück"
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
-     "inStock": true,
-     "text": "30 Stück"
-    },
-    {
-     "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
-     "inStock": true,
-     "text": "12 Stück"
-    }
-   ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
-   "online": true
-  },
-  {
    "name": "Salted Peanut Butter",
    "tracked": true,
    "count": 7,
@@ -719,7 +548,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 0.91,
      "inStock": true,
-     "text": "5 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
@@ -973,6 +802,77 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-matcha-raspberry-packshot-detailshot-12-box.jpg?v=1783949123&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry",
+   "online": true
+  },
+  {
+   "name": "Salted Pistachio",
+   "tracked": true,
+   "count": 0,
+   "total": 10,
+   "stores": [
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 0.03,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 0.63,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 0.67,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 0.91,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.41,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 1.97,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 2.24,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Westendstraße 98",
+     "dist": 2.27,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 2.59,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tübinger Straße 3e",
+     "dist": 3.2,
+     "inStock": false,
+     "text": ""
+    }
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
    "online": true
   },
   {
@@ -1259,8 +1159,9 @@
    "{\"D37L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
   ],
   [
-   "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "err",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8",
+   "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
   ],
   [
    "ok",
@@ -1271,8 +1172,9 @@
    "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
-   "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "err",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8",
+   "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
   ],
   [
    "ok",
