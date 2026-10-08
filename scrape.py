@@ -49,7 +49,7 @@ def dm_search():
 
 def dm_products():
     prods = dm_search()
-    if prods: return prods
+    if prods: return {**DM_FALLBACK, **prods}
     try:
         html = fetch(DM_BRAND_URL)
         for dan in dict.fromkeys(re.findall(r"/p/d/(\d{5,8})", html)):
@@ -62,19 +62,14 @@ def dm_products():
     return prods or DM_FALLBACK
 
 def dm_stores(wanted):
-    d = 8 / 111.0  # ~8 km Suchgebiet, damit alle Laeden sicher drin sind
-    la, lo = CENTER
-    stores = []
-    for url in (
-        f"https://store-data-service.services.dmtech.com/stores/bbox/{la-d:.5f},{lo-d*1.5:.5f},{la+d:.5f},{lo+d*1.5:.5f}",
-        f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/8?countryCode=DE",
-        f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/8000?countryCode=DE",
-    ):
+    allst = {}
+    for la, lo, rad in ((CENTER[0], CENTER[1], 8), (48.1400, 11.5100, 3), (48.1195, 11.5455, 3)):
         try:
-            data = get(url)
-            stores = data.get("stores", data) if isinstance(data, dict) else data
-            if stores: break
+            data = get(f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/{rad}?countryCode=DE")
+            for x in (data.get("stores", data) if isinstance(data, dict) else data):
+                allst[str(x.get("storeNumber"))] = x
         except Exception: continue
+    stores = list(allst.values()); DEBUG.append(["dm_stores_gefunden", len(stores)])
     if not stores: raise RuntimeError("keine dm-Filialliste abrufbar (siehe dm_debug)")
     found, unmatched = [], []
     for w in wanted:
@@ -91,14 +86,20 @@ def dm_stores(wanted):
     return found, unmatched
 
 def dm_availability(stores, prods):
-    q = urllib.parse.urlencode({"dans": ",".join(prods), "storeNumbers": ",".join(s["id"] for s in stores)})
-    av = get(f"https://products.dm.de/store-availability/DE/availability?{q}")
+    q = "dans=" + ",".join(prods) + "&storeNumbers=" + ",".join(x["id"] for x in stores)
+    av = None
+    for base in ("https://products.dm.de/store-availability/DE/availability",
+                 "https://products.dm.de/store-availability/de/availability",
+                 "https://products.dm.de/store-availability/DE/availability/",):
+        try: av = get(f"{base}?{q}"); break
+        except Exception: continue
+    if av is None: raise RuntimeError("dm-Bestandsabfrage nicht erreichbar (siehe dm_debug)")
     av = av.get("storeAvailabilities", av)
-    for s in stores:
-        s["items"] = {}
-        for it in av.get(s["id"], []):
+    for x in stores:
+        x["items"] = {}
+        for it in av.get(x["id"], []):
             n = prods.get(str(it.get("dan")))
-            if n: s["items"][n] = {"inStock": bool(it.get("inStock")), "level": it.get("stockLevel")}
+            if n: x["items"][n] = {"inStock": bool(it.get("inStock")), "level": it.get("stockLevel")}
     return stores
 
 if __name__ == "__main__":
@@ -111,6 +112,6 @@ if __name__ == "__main__":
         r["dm"] = dm_availability(stores, prods) if stores else []
     except Exception as e:
         r["dm_error"] = repr(e); print("dm Fehler:", e, file=sys.stderr)
-    r["dm_debug"] = DEBUG[-12:]
+    r["dm_debug"] = DEBUG[-20:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
     print(len(r["dm"]), "dm-Filialen geprüft; nicht zugeordnet:", r["dm_unmatched"])
