@@ -3,16 +3,88 @@
   "cookies ok",
   "buttons: Hauptnavigation | Kategorienavigation | Hauptinhalt | Nachhaltigkeit | Tipps & Trends | Rezepte | Services | Kundenservice | Jobs bei dm | Neu | Marken | Make-up | Pflege & Parfum | Haare | Gesundheit | Ernährung | Baby & Kind | Haushalt | Home & Living | Foto | Tier | Ausverkauf | Kostenloser Versand ab 59 € mit dm-Konto | Online bestellen & nach 2 Stunden abholen* | Dauerpreis - dauerhaft günstig einkaufen | Startseite | Snacks & Süßigkeiten | Schokolade & Schokoriegel | Lini's Bites | 3.9\n(128 Bewertungen) | Weitere Produktmerkmale | Versand | dm-Dauerpreis\nnicht erhöht seit 25.06.2024 | In den Warenkorb | Verfügbarkeit in einem dm-Markt prüfen | Gestern, heute, immer günstig:\n\nunser dm-Dauerpreis | Auflistung mit 3 Elementen. Zum Ende der Liste springen. | DE-ÖKO-037\nEU/Nicht-EU Landwirtschaft | Weitere Produkte von Lini's Bites | Auflistung mit 5 Elementen. Zum Ende der Liste springen. | Rezepte aus der alverde\n\nSüßer Erdnussriegel mit knackigen Nüssen | Rezepte\n\nFrühstücks-Cookies | Rezepte\n\nSaftiger Schokoladen-Zucchini-Cake im Glas | Rezepte\n\nMacarons mit Zimt und Schoko-Mohn-Füllung | Rezepte\n\nErdnuss-Schoko-Energyballs | Auflistung mit 10 Elementen. Zum Ende der Liste springen. | Pralinis Creamy Coconut, 46 g | Hinweise | Pralinis Salted Peanut Butter, 46 g | dm-Markt wählen | Pralinis Matcha Raspberry, 46 g | Pralinis Salted Pistachio, 46 g | Pralinis White Hazelnut, 46 g | Pralinis Tiramisu, 46 g | Cream Bites Raspberry, 42 g | Proteinriegel, Protein Bites Coconut",
   "klick Markt",
-  "kein Eingabefeld"
+  "suche ok"
+ ],
+ "requests": [
+  [
+   "GET",
+   "https://products.dm.de/product/products/detail/DE/dan/1714108",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/availability/api/v2/detail/DE/1714108",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/product/products/tiles/DE/dans/1488265,1544524,1670772,1674121,1714169,2975242,3058005,3064750,3095027,3129562",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/product/products/tiles/DE/dans/1714136,3105015,3111173,3121815,3121823,3160737",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/availability/api/v2/tiles/DE/1714136,1714169,2975242,3064750,3095027,3105015,3111173,3121815,3121823,3160737",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/availability/api/v2/tiles/DE/1488265,1544524,1670772,1674121,3058005,3129562",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/storeproperties/list/DE",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/0?countryCode=DE",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/1?countryCode=DE",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/2?countryCode=DE",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/3?countryCode=DE",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Theresienh%C3%B6he+5,+80339+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPath,location",
+   ""
+  ],
+  [
+   "GET",
+   "https://store-data-service.services.dmtech.com/api/v2/stores/bbox/48.188791087747774%2C11.491637406983745%2C48.071940473335864%2C11.604590593019434?countryCode=DE&fields=storeId,countryCode,storeNumber,storeUrlPath,openingHours,phone,address,location,noPackage",
+   ""
+  ],
+  [
+   "GET",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D09L,D0BG,D0D8,D0DD,D0G5,D0L6,D11D,D1AG,D1DL,D1F3,D23L,D261,D2H6,D2KH,D2KK,D32C,D346,D34G,D36A,D37L,D3A4,D3A5,D3AC,D3CI,D3GB,D3GC,D3I2,D3IE,D3J9,D44A,D498,D4BD,D4EL,D4G3,D4JH,D4KB,D4L4,D522,D53A,D",
+   ""
+  ]
  ],
  "net": [
   [
    200,
-   "https://product-search.services.dmtech.com/de/search-position-config"
+   "https://retail-media.services.dmtech.com/de/position-config?channel=web"
   ],
   [
    200,
-   "https://retail-media.services.dmtech.com/de/position-config?channel=web"
+   "https://product-search.services.dmtech.com/de/search-position-config"
   ],
   [
    200,
@@ -24,15 +96,15 @@
   ],
   [
    200,
+   "https://products.dm.de/availability/api/v2/detail/DE/1714108"
+  ],
+  [
+   200,
    "https://product-based-recos.services.dmtech.com/public/v2/de/recommendations/composite-purchase/dan/1714108?size=10"
   ],
   [
    200,
    "https://product-based-recos.services.dmtech.com/public/v2/de/recommendations/alternative-products/dan/1714108?size=10"
-  ],
-  [
-   200,
-   "https://products.dm.de/availability/api/v2/detail/DE/1714108"
   ],
   [
    200,
@@ -45,10 +117,6 @@
   [
    200,
    "https://products.dm.de/availability/api/v2/tiles/DE/1488265,1544524,1670772,1674121,3058005,3129562"
-  ],
-  [
-   200,
-   "https://products.dm.de/product/products/tiles/DE/dans/1488265,1544524,1670772,1674121,3058005,3129562"
   ],
   [
    200,
@@ -76,51 +144,63 @@
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EA&_fplc=0&cid=409988060.1791441174&"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EA&_fplc=0&cid=471967051.1791439387&f"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
-   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791441173635&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=1443729401&_eu=EAAAAAQ&_fplc=0&cid=409988060.179144"
   ],
   [
    200,
@@ -132,6 +212,10 @@
   ],
   [
    200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/3?countryCode=DE"
+  ],
+  [
+   200,
    "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/1?countryCode=DE"
   ],
   [
@@ -140,7 +224,15 @@
   ],
   [
    200,
-   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/3?countryCode=DE"
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Theresienh%C3%B6he+5,+80339+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPath,location"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/bbox/48.188791087747774%2C11.491637406983745%2C48.071940473335864%2C11.604590593019434?countryCode=DE&fields=storeId,countryCode,storeNumber,storeUrlPath,openi"
+  ],
+  [
+   200,
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D09L,D0BG,D0D8,D0DD,D0G5,D0L6,D11D,D1AG,D1DL,D1F3,D23L,D261,D2H6,D2KH,D2KK,D32C,D346,D34G,D36A,D37L,D3A4,D3A5,D3AC,D3CI,D3GB,D3GC,D3I2,D3IE,D3J9,D44A,D498,D"
   ]
  ],
  "bodies": {
