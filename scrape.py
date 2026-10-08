@@ -4,11 +4,6 @@ import json, math, re, datetime, urllib.request, urllib.parse, urllib.error, sys
 CENTER = (48.1340, 11.5666)  # Sendlinger Tor, nur fuer Entfernungsanzeige/Suchgebiet
 DM_BRAND_URL = "https://www.dm.de/marken/linis-bites-2349676"
 DM_FALLBACK = {"3121779": "Vanilla Cookie", "3121805": "Carrot Cake", "3121823": "Tiramisu"}
-LINKS = {
-    "Rossmann: alle Lini's Bites": "https://www.rossmann.de/de/alle-marken/linis-bites/c/online-dachmarke_17644792",
-    "Edeka Marktsuche (kein Bestand abrufbar)": "https://www.edeka.de/marktsuche.jsp",
-    "Alnatura Marktfinder (kein Bestand abrufbar)": "https://www.alnatura.de/de-de/maerkte/marktfinder/",
-}
 UA = {"User-Agent": "Mozilla/5.0 (private hobby tracker)", "Accept": "application/json, text/html"}
 
 def fetch(url):
@@ -101,12 +96,15 @@ def find(data, sid):
 
 def judge(v):
     txt = json.dumps(v, ensure_ascii=False).upper()
+    ok = "GREEN" in txt or '"INSTOCK": TRUE' in txt
     level = None
     if isinstance(v, dict):
         for k in ("stockLevel", "stock", "quantity", "amount"):
             if isinstance(v.get(k), (int, float)): level = int(v[k]); break
-    ok = "GREEN" in txt or '"INSTOCK": TRUE' in txt or bool(level)
-    return {"inStock": ok, "level": level, "text": f"{level} Stück" if level else ""}
+        if level: ok = True
+    m = re.search(r"(\d+\+?)\s*Stück", str(v.get("text", "")) if isinstance(v, dict) else "")
+    qty = f"{m.group(1)} Stück" if m else (f"{level} Stück" if level else "")
+    return {"inStock": ok, "level": level, "text": qty}
 
 def dm_availability(stores, prods):
     ids = ",".join(x["sid"] for x in stores if x.get("sid"))
@@ -121,10 +119,72 @@ def dm_availability(stores, prods):
             if v is not None: x["items"][name] = judge(v)
     return stores
 
+LINI = "https://linisbites.com"
+
+def pkey(title):
+    t = re.sub(r"\(.*?\)", "", str(title))
+    t = re.sub(r"bio pralinis|pralinis|–.*|-\s*community edition|community edition|limited edition", "", t, flags=re.I)
+    return re.sub(r"[^a-z]", "", t.lower())
+
+def lini():
+    """Sorten, Bilder, Online-Status von Lini's Website (Shopify)."""
+    prods = []
+    try:
+        prods = get(f"{LINI}/collections/pralinis/products.json?limit=250").get("products", [])
+    except Exception:
+        try:
+            html = fetch(f"{LINI}/collections/pralinis")
+            for h in list(dict.fromkeys(re.findall(r"/products/([a-z0-9\-]+)", html)))[:40]:
+                try: prods.append(get(f"{LINI}/products/{h}.js"))
+                except Exception: pass
+        except Exception as e:
+            DEBUG.append(["lini", repr(e)[:150]])
+    out = {}
+    for p in prods:
+        title = p.get("title", ""); k = pkey(title)
+        if not k: continue
+        img = ""
+        if p.get("images"):
+            im = p["images"][0]; img = im.get("src", "") if isinstance(im, dict) else str(im)
+        img = img or str(p.get("featured_image") or "")
+        if img.startswith("//"): img = "https:" + img
+        if img: img += ("&" if "?" in img else "?") + "width=400"
+        avail = any(v.get("available") for v in p.get("variants", []))
+        url = f"{LINI}/products/{p.get('handle')}"
+        e = out.setdefault(k, {"name": re.sub(r"Bio Pralinis|\(.*?\)|–.*", "", title).strip(), "image": "", "url": "", "online": None})
+        if img and not e["image"]: e["image"] = img
+        if "12er" not in title.lower(): e["url"], e["online"] = url, avail
+        else:
+            if e["online"] is None: e["online"] = avail
+            if not e["url"]: e["url"] = url
+    DEBUG.append(["lini_sorten", len(out)])
+    return out
+
+def build_cards(dm, prods, li, old):
+    cards, seen = [], set()
+    for dan, name in prods.items():
+        k = pkey(name); seen.add(k)
+        stores = []
+        for s in dm:
+            it = s["items"].get(name, {})
+            stores.append({"name": s["name"], "dist": s.get("dist"), "inStock": bool(it.get("inStock")), "text": it.get("text", "")})
+        stores.sort(key=lambda x: (not x["inStock"], x["dist"] if x["dist"] is not None else 99))
+        n = sum(1 for x in stores if x["inStock"]); l = li.get(k, {})
+        c = {"name": name, "tracked": True, "count": n, "total": len(stores), "stores": stores,
+             "image": l.get("image", ""), "url": l.get("url", ""), "online": l.get("online")}
+        if name in old and old[name] == 0 and n > 0: c["new"] = True
+        cards.append(c)
+    cards.sort(key=lambda c: (-c["count"], c["name"]))
+    for k, l in li.items():
+        if k not in seen:
+            cards.append({"name": l["name"], "tracked": False, "count": 0, "total": 0, "stores": [],
+                          "image": l["image"], "url": l["url"], "online": l["online"]})
+    return cards
+
 if __name__ == "__main__":
     cfg = json.load(open("stores.json"))
     r = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "dm": [], "dm_error": None,
-         "dm_unmatched": [], "links": LINKS}
+         "dm_unmatched": [], "links": {"lini": LINI + "/collections/pralinis"}}
     try:
         prods = dm_products(); r["dm_products"] = prods
         stores, r["dm_unmatched"] = dm_stores(cfg["dm"])
@@ -132,6 +192,10 @@ if __name__ == "__main__":
         if r["dm"] and not any(x["items"] for x in r["dm"]): r["dm_error"] = "Bestandsantwort nicht erkannt (siehe dm_debug)"
     except Exception as e:
         r["dm_error"] = repr(e); print("dm Fehler:", e, file=sys.stderr)
+    try: old = {c["name"]: c["count"] for c in json.load(open("docs/data.json")).get("cards", [])}
+    except Exception: old = {}
+    try: r["cards"] = build_cards(r["dm"], r.get("dm_products", {}), lini(), old)
+    except Exception as e: r["cards"] = []; DEBUG.append(["cards", repr(e)[:150]])
     r["dm_debug"] = DEBUG[-20:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
     print(len(r["dm"]), "dm-Filialen geprüft; nicht zugeordnet:", r["dm_unmatched"])
