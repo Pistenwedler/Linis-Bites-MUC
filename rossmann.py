@@ -1,6 +1,5 @@
 """Rossmann: Filialbestand direkt ueber die Rossmann-Filialsuche (XML), kein Browser noetig -> docs/rossmann.json"""
-import json, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
-import xml.etree.ElementTree as ET
+import json, html, re, sys, time, datetime, urllib.request, urllib.parse, urllib.error
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 
@@ -16,12 +15,13 @@ def api(q, dan):
         return r.read().decode("utf-8", "replace")
 
 def parse(xml):
+    """Robust per Regex (auch wenn das XML formal fehlerhaft ist)."""
     out = []
-    for st in ET.fromstring(xml).iter("store"):
-        g = lambda t: (st.findtext(t) or "").strip()
-        pi = st.find("productInfos/productInfo")
-        stock = (pi.findtext("stock") or "").strip() if pi is not None else ""
-        ok = stock not in ("", "0")
+    for blk in re.findall(r"<store>(.*?)</store>", xml, re.S):
+        def g(tag):
+            m = re.search(rf"<{tag}>(.*?)</{tag}>", blk, re.S)
+            return html.unescape(m.group(1)).strip() if m else ""
+        stock = g("stock"); ok = stock not in ("", "0")
         out.append({"street": g("street"), "plz": g("postcode"), "pickup": g("pickupStation") == "true",
                     "inStock": ok, "text": f"{stock} Stück" if ok else "nicht verfügbar"})
     return out
@@ -31,7 +31,10 @@ def check(dan, name, wanted, query):
     found = {}
     def run(q):
         try:
-            for t in parse(api(q, dan)):
+            xml = api(q, dan); rows = parse(xml)
+            if not rows:
+                res["error"] = "Antwort ohne Filialen"; res["sample"] = xml[:400]
+            for t in rows:
                 for w in wanted:
                     if norm(w["street"]) == norm(t["street"]): found[norm(w["street"])] = t
         except urllib.error.HTTPError as e:
