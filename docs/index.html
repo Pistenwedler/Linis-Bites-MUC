@@ -1,32 +1,64 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lini's Bites Tracker</title>
-<style>:root{--bg:#fff;--fg:#222;--c:#f3f3f3;--ok:#1a7f37;--no:#8a8a8a}
-@media(prefers-color-scheme:dark){:root{--bg:#161616;--fg:#eee;--c:#242424;--ok:#4cc26a}}
-body{font:16px system-ui,sans-serif;background:var(--bg);color:var(--fg);padding:16px;max-width:640px;margin:auto}
-.card{background:var(--c);border-radius:12px;padding:12px;margin:10px 0}.ok{color:var(--ok);font-weight:600}.no{color:var(--no)}
-small{opacity:.7}a{color:inherit}</style></head><body>
-<h2>🍫 Lini's Bites München</h2><small id="u"></small>
-<h3>dm</h3><div id="dm">lädt…</div><h3>Rossmann</h3><div id="rm">lädt…</div><h3>Weitere Links</h3><div id="ro"></div>
-<script>
-const hit=s=>Object.values(s.items||{}).some(i=>i.inStock);
-function render(list,err,extra){
- let h=err?'<p class="no">Abfrage fehlgeschlagen: '+err+'</p>':'';
- const hits=list.filter(hit);
- if(!err)h+=hits.length?'<p class="ok">'+hits.length+' Filiale(n) mit Treffer</p>':'<p class="no">Aktuell nirgends verfügbar.</p>';
- [...hits,...list.filter(s=>!hit(s))].forEach(s=>{
-  h+='<div class="card"><b>'+s.name+'</b> <small>'+(s.dist==null?'':s.dist+' km')+(s.pickup?' · Abholstation':'')+'</small><br>'+
-  Object.entries(s.items||{}).map(([n,i])=>'<span class="'+(i.inStock?'ok':'no')+'">'+(i.inStock?'✔ ':'✘ ')+n+(i.text&&i.inStock?' ('+i.text+')':'')+'</span>').join(' · ')+'</div>'});
- return h+(extra||'')}
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lini's Bites Tracker</title>
+<style>
+:root{--bg:#faf6f4;--fg:#2a2326;--card:#fff;--mut:#857b80;--ok:#2e9e5b;--okbg:#e4f4ea;--no:#c4bbbf;--line:#efe7e9;--pink:#e0457b;--warn:#fff3cd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root{--bg:#161214;--fg:#f3ecee;--card:#221c1f;--mut:#a79ea2;--ok:#4cc27d;--okbg:#17301f;--no:#675e62;--line:#332b2f;--warn:#4a3d12}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font:16px/1.4 system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:640px;margin:auto;padding:16px}
+h1{font-size:1.35rem;margin:4px 0}h2{font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:26px 0 8px}
+.hero{background:var(--card);border-radius:18px;padding:16px;margin:12px 0;border:1px solid var(--line)}
+.hero b{font-size:1.5rem}.mut{color:var(--mut);font-size:.85rem}
+.banner{background:var(--warn);border-radius:12px;padding:10px 12px;margin:10px 0;font-size:.9rem}
+label.f{display:flex;gap:8px;align-items:center;margin:10px 2px;font-size:.95rem}
+details,.plain{background:var(--card);border:1px solid var(--line);border-radius:18px;margin:10px 0;overflow:hidden}
+summary,.plain{list-style:none;cursor:pointer;display:flex;gap:12px;align-items:center;padding:12px}
+summary::-webkit-details-marker{display:none}
+.thumb{width:64px;height:64px;border-radius:14px;flex:none;background:linear-gradient(135deg,#f6c9d8,#f9e3c9);overflow:hidden;display:grid;place-items:center;font-weight:700;color:#fff}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.info{flex:1;min-width:0}.info b{display:block;font-size:1.05rem}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.chip{font-size:.72rem;padding:2px 8px;border-radius:99px;background:var(--line);color:var(--mut)}
+.chip.new{background:var(--pink);color:#fff;font-weight:600}.chip.on{background:var(--okbg);color:var(--ok)}
+.dot{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;font-weight:700;font-size:1.1rem;border:3px solid var(--no);color:var(--mut)}
+.dot.ok{border-color:var(--ok);background:var(--okbg);color:var(--ok)}
+details[open] summary{border-bottom:1px solid var(--line)}
+ul{list-style:none;margin:0;padding:6px 14px 12px}li{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+li:last-child{border:0}li .d{width:12px;height:12px;border-radius:50%;background:var(--no);flex:none}li.ok .d{background:var(--ok)}
+li .n{flex:1}li.no{color:var(--mut)}li em{font-style:normal;font-weight:600;color:var(--ok)}
+.link{display:block;padding:0 14px 14px;font-size:.85rem}a{color:var(--pink)}
+.plain{cursor:default}.plain .dot{display:none}
+</style></head><body><main>
+<h1>🍫 Lini's Bites München</h1><div class="mut" id="u"></div>
+<div id="top"></div><label class="f"><input type="checkbox" id="only"> Nur verfügbare Sorten zeigen</label>
+<div id="list">lädt…</div><div id="more"></div>
+<p class="mut" style="margin-top:28px">Quelle: dm-Filialabfrage und linisbites.com. Grau heißt: dort aktuell keine Information oder nicht da. Rossmann ist pausiert.</p>
+</main><script>
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let D=null;
+function chips(c){let h='';if(c.new)h+='<span class="chip new">NEU verfügbar</span>';
+ if(c.online===true)h+='<span class="chip on">Online im Shop</span>';else if(c.online===false)h+='<span class="chip">Shop: nicht verfügbar</span>';return h}
+function thumb(c){return '<div class="thumb">'+(c.image?'<img loading="lazy" alt="" src="'+esc(c.image)+'" onerror="this.remove()">':esc(c.name.charAt(0)))+'</div>'}
+function render(){
+ const only=document.getElementById('only').checked;
+ const tr=D.cards.filter(c=>c.tracked&&(!only||c.count>0)),oth=D.cards.filter(c=>!c.tracked);
+ document.getElementById('list').innerHTML=tr.map(c=>{
+  const ok=c.count>0;
+  const st=c.stores.map(s=>'<li class="'+(s.inStock?'ok':'no')+'"><span class="d"></span><span class="n">'+esc(s.name)+'</span><small class="mut">'+(s.dist==null?'':esc(s.dist)+' km')+'</small>'+(s.inStock&&s.text?'<em>'+esc(s.text)+'</em>':'')+'</li>').join('');
+  return '<details><summary>'+thumb(c)+'<div class="info"><b>'+esc(c.name)+'</b><span class="mut">'+(ok?'in '+c.count+' von '+c.total+' Filialen':'aktuell in keiner Filiale')+'</span><div class="chips">'+chips(c)+'</div></div><div class="dot'+(ok?' ok':'')+'">'+c.count+'</div></summary><ul>'+st+'</ul>'+(c.url?'<a class="link" href="'+esc(c.url)+'">Im Lini\'s Shop ansehen →</a>':'')+'</details>'}).join('')||'<p class="mut">Keine Sorten verfügbar.</p>';
+ document.getElementById('more').innerHTML=oth.length&&!only?'<h2>Weitere Sorten (nur online)</h2>'+oth.map(c=>'<a class="plain" style="text-decoration:none;color:inherit" href="'+esc(c.url)+'">'+thumb(c)+'<div class="info"><b>'+esc(c.name)+'</b><div class="chips">'+chips(c)+'</div></div></a>').join(''):'';
+}
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
- u.textContent='dm-Stand: '+new Date(d.updated).toLocaleString('de-DE');
- const un=d.dm_unmatched&&d.dm_unmatched.length?'<p class="no"><small>Nicht gefunden: '+d.dm_unmatched.join(', ')+'</small></p>':'';
- dm.innerHTML=render(d.dm,d.dm_error,un);
- ro.innerHTML=Object.entries(d.links).map(([n,l])=>'<div class="card"><a href="'+l+'">'+n+'</a></div>').join('')});
-fetch('rossmann.json?'+Date.now()).then(r=>r.json()).then(d=>{
- const m={};
- d.products.forEach(p=>{p.stores.forEach(s=>{const k=s.street;m[k]=m[k]||{name:'Rossmann '+s.street,items:{},pickup:s.pickup};
-  m[k].items[p.name]={inStock:s.inStock,text:(s.text.match(/([\d+\-–]+ Stück)/)||[])[1]}})});
- const miss=d.products.filter(p=>p.missing.length).map(p=>p.name+': '+p.missing.join(', '));
- rm.innerHTML=render(Object.values(m),d.error,miss.length?'<p class="no"><small>Nicht in der Liste: '+miss.join(' | ')+'</small></p>':'')})
- .catch(()=>{rm.innerHTML='<p class="no">Noch keine Rossmann-Daten.</p>'});
+ D=d;D.cards=d.cards||[];
+ const age=(Date.now()-new Date(d.updated))/36e5;
+ document.getElementById('u').textContent='Stand: '+new Date(d.updated).toLocaleString('de-DE');
+ const n=D.cards.filter(c=>c.tracked&&c.count>0).length;
+ let t='<div class="hero"><b>'+n+'</b> Sorte'+(n==1?'':'n')+' aktuell in deinen dm-Filialen verfügbar</div>';
+ if(d.dm_error)t+='<div class="banner">dm-Abfrage fehlgeschlagen: '+esc(d.dm_error)+'</div>';
+ if(d.dm_unmatched&&d.dm_unmatched.length)t+='<div class="banner">Nicht gefunden: '+esc(d.dm_unmatched.join(', '))+'</div>';
+ if(age>7)t+='<div class="banner">Die Daten sind '+Math.round(age)+' Std. alt.</div>';
+ document.getElementById('top').innerHTML=t;
+ document.getElementById('only').onchange=render;render();
+}).catch(e=>{document.getElementById('list').innerHTML='<div class="banner">Daten konnten nicht geladen werden.</div>'});
 </script></body></html>
