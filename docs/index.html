@@ -28,6 +28,13 @@ ul{list-style:none;margin:0;padding:6px 14px 12px}li{display:flex;gap:10px;align
 li:last-child{border:0}li .d{width:12px;height:12px;border-radius:50%;background:var(--no);flex:none}li.ok .d{background:var(--ok)}
 li .n{flex:1}li.no{color:var(--mut)}li em{font-style:normal;font-weight:600;color:var(--ok)}
 .link{display:block;padding:0 14px 14px;font-size:.85rem}a{color:var(--pink)}
+.hist{padding:0 14px 6px}.hist h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:12px 0 6px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin:2px 0 6px}
+.seg button{border:0;background:none;color:var(--fg);padding:5px 13px;font:inherit;font-size:.82rem;cursor:pointer}
+.seg button.on{background:var(--ok);color:#fff}
+svg.tl,svg.hm{width:100%;height:auto;display:block}svg text{font:10px system-ui,sans-serif;fill:var(--mut)}
+.tl .bg{fill:var(--line)}.tl .nodata{fill:var(--no);opacity:.3}.tl .gl{stroke:var(--card);stroke-width:1}.tl .mon{stroke:var(--no);stroke-width:1}
+.tl .ok{fill:var(--ok)}.hm .cell{fill:var(--line)}.hm .hot{fill:var(--ok)}
 .plain{cursor:default}.plain .dot{display:none}
 </style></head><body><main>
 <h1>🍫 Lini's Bites München</h1><div class="mut" id="u"></div>
@@ -46,7 +53,7 @@ function render(){
  document.getElementById('list').innerHTML=tr.map(c=>{
   const ok=c.count>0;
   const st=c.stores.map(s=>'<li class="'+(s.inStock?'ok':'no')+'"><span class="d"></span><span class="n">'+esc(s.name)+'</span><small class="mut">'+(s.dist==null?'':esc(s.dist)+' km')+'</small>'+(s.inStock&&s.text?'<em>'+esc(s.text)+'</em>':'')+'</li>').join('');
-  return '<details><summary>'+thumb(c)+'<div class="info"><b>'+esc(c.name)+'</b><span class="mut">'+(ok?'in '+c.count+' von '+c.total+' Filialen':'aktuell in keiner Filiale')+'</span><div class="chips">'+chips(c)+'</div></div><div class="dot'+(ok?' ok':'')+'">'+c.count+'</div></summary><ul>'+st+'</ul>'+(c.url?'<a class="link" href="'+esc(c.url)+'">Im Lini\'s Shop ansehen →</a>':'')+'</details>'}).join('')||'<p class="mut">Keine Sorten verfügbar.</p>';
+  return '<details data-name="'+esc(c.name)+'"><summary>'+thumb(c)+'<div class="info"><b>'+esc(c.name)+'</b><span class="mut">'+(ok?'in '+c.count+' von '+c.total+' Filialen':'aktuell in keiner Filiale')+'</span><div class="chips">'+chips(c)+'</div></div><div class="dot'+(ok?' ok':'')+'">'+c.count+'</div></summary><ul>'+st+'</ul><div class="hist"></div>'+(c.url?'<a class="link" href="'+esc(c.url)+'">Im Lini\'s Shop ansehen →</a>':'')+'</details>'}).join('')||'<p class="mut">Keine Sorten verfügbar.</p>';
  document.getElementById('more').innerHTML=oth.length&&!only?'<h2>Weitere Sorten (nur online)</h2>'+oth.map(c=>'<a class="plain" style="text-decoration:none;color:inherit" href="'+esc(c.url)+'">'+thumb(c)+'<div class="info"><b>'+esc(c.name)+'</b><div class="chips">'+chips(c)+'</div></div></a>').join(''):'';
 }
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
@@ -61,4 +68,48 @@ fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
  document.getElementById('top').innerHTML=t;
  document.getElementById('only').onchange=render;render();
 }).catch(e=>{document.getElementById('list').innerHTML='<div class="banner">Daten konnten nicht geladen werden.</div>'});
+
+let H=null,RANGE=30;const WD=['Mo','Di','Mi','Do','Fr','Sa','So'];
+function pairs(){if(H._m)return H._m;const m={};H.events.forEach(e=>{const k=e[1]+'|'+e[2];(m[k]=m[k]||[]).push(e)});Object.values(m).forEach(a=>a.sort((x,y)=>x[0]-y[0]));return H._m=m}
+function drawHist(det){
+ const box=det.querySelector('.hist');
+ if(!H){box.innerHTML='<p class="mut">Noch keine Verlaufsdaten.</p>';return}
+ const pi=H.products.indexOf(det.dataset.name);
+ if(pi<0){box.innerHTML='<p class="mut">Für diese Sorte gibt es noch keinen Verlauf.</p>';return}
+ const NOW=Math.floor(Date.now()/60000),t0=NOW-RANGE*1440,L=128,W=460,RH=17,top=16,n=H.stores.length;
+ const x=t=>L+Math.max(0,Math.min(1,(t-t0)/(NOW-t0)))*W,m=pairs();
+ let bg='',grid='',bars='',lab='',nod='';
+ if(H.first>t0)nod='<rect class="nodata" x="'+L+'" y="'+top+'" width="'+(x(H.first)-L)+'" height="'+(n*RH)+'"/>';
+ const d=new Date(t0*60000);d.setHours(24,0,0,0);
+ for(;d.getTime()/60000<NOW;d.setDate(d.getDate()+1)){
+  const xx=x(d.getTime()/60000),mon=d.getDay()==1;
+  grid+='<line class="gl'+(mon?' mon':'')+'" x1="'+xx+'" x2="'+xx+'" y1="'+top+'" y2="'+(top+n*RH)+'"/>';
+  if(RANGE<=14||mon)lab+='<text x="'+xx+'" y="10" text-anchor="middle">'+WD[(d.getDay()+6)%7]+(RANGE>14?' '+d.getDate()+'.':'')+'</text>'}
+ H.stores.forEach((s,si)=>{
+  const y=top+si*RH,nm=s.replace(/^dm /,'');
+  bg+='<text x="'+(L-6)+'" y="'+(y+12)+'" text-anchor="end">'+esc(nm.length>21?nm.slice(0,20)+'…':nm)+'</text><rect class="bg" x="'+L+'" y="'+(y+2)+'" width="'+W+'" height="'+(RH-4)+'" rx="3"/>';
+  let st=null;const seg=[];
+  (m[pi+'|'+si]||[]).forEach(e=>{if(e[3]==1){if(st==null)st=e[0]}else if(st!=null){seg.push([st,e[0]]);st=null}});
+  if(st!=null)seg.push([st,NOW]);
+  seg.forEach(([a,b])=>{if(b<t0)return;const xa=x(Math.max(a,t0)),xb=x(b);bars+='<rect class="ok" x="'+xa+'" y="'+(y+2)+'" width="'+Math.max(xb-xa,2)+'" height="'+(RH-4)+'" rx="3"/>'})});
+ const tl='<svg class="tl" viewBox="0 0 '+(L+W+8)+' '+(top+n*RH+4)+'" role="img" aria-label="Verfügbarkeit pro Filiale">'+bg+nod+grid+bars+lab+'</svg>';
+ // Heatmap: wann Filialen die Sorte neu bekamen
+ const bins=Array.from({length:7},()=>Array(24).fill(0));let cnt=0;
+ H.events.forEach(e=>{if(e[1]==pi&&e[3]==1&&!e[4]){const t=new Date(e[0]*60000);bins[(t.getDay()+6)%7][t.getHours()]++;cnt++}});
+ const mx=Math.max(1,...bins.flat()),cw=W/24;let hm='';
+ for(let hh=0;hh<24;hh+=3)hm+='<text x="'+(L+hh*cw+cw/2)+'" y="10" text-anchor="middle">'+hh+'</text>';
+ bins.forEach((row,di)=>{hm+='<text x="'+(L-6)+'" y="'+(24+di*15)+'" text-anchor="end">'+WD[di]+'</text>';
+  row.forEach((c,hh)=>{hm+='<rect class="cell" x="'+(L+hh*cw+1)+'" y="'+(14+di*15)+'" width="'+(cw-2)+'" height="13" rx="2"/>';
+   if(c)hm+='<rect class="hot" style="opacity:'+(.25+.75*c/mx).toFixed(2)+'" x="'+(L+hh*cw+1)+'" y="'+(14+di*15)+'" width="'+(cw-2)+'" height="13" rx="2"/>'})});
+ let txt='Noch zu wenig Daten für ein Muster ('+cnt+' Auffüllung'+(cnt==1?'':'en')+' beobachtet, ab 5 sinnvoll).';
+ if(cnt>=5){const wd=bins.map(r=>r.reduce((a,b)=>a+b,0)),bd=wd.indexOf(Math.max(...wd));
+  let bh=0,bs=-1;for(let a=0;a<24;a++){let s=0;for(let k=0;k<3;k++)s+=bins[bd][(a+k)%24];if(s>bs){bs=s;bh=a}}
+  txt='Meist '+WD[bd]+', '+bh+'–'+((bh+3)%24)+' Uhr (nach '+cnt+' beobachteten Auffüllungen).'}
+ box.innerHTML='<h3>Verlauf</h3><div class="seg">'+[7,14,30].map(r=>'<button data-r="'+r+'"'+(r==RANGE?' class="on"':'')+'>'+r+' Tage</button>').join('')+'</div>'+tl+
+  '<p class="mut" style="margin:4px 0 0">Grün = in der Filiale verfügbar. Zeitpunkt auf ca. 1 Std. genau.</p>'+
+  '<h3>Wann kommt Nachschub?</h3><svg class="hm" viewBox="0 0 '+(L+W+8)+' '+(14+7*15+2)+'" role="img" aria-label="Heatmap Wochentag und Uhrzeit">'+hm+'</svg><p class="mut" style="margin:4px 0 0">'+txt+'</p>'}
+document.getElementById('list').addEventListener('toggle',ev=>{if(ev.target.open)drawHist(ev.target)},true);
+document.getElementById('list').addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('button[data-r]');if(!b)return;
+ RANGE=+b.dataset.r;document.querySelectorAll('#list details[open]').forEach(drawHist)});
+fetch('history.json?'+Date.now()).then(r=>r.json()).then(j=>{H=j;document.querySelectorAll('#list details[open]').forEach(drawHist)}).catch(()=>{});
 </script></body></html>
