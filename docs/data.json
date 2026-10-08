@@ -1,22 +1,21 @@
 {
- "updated": "2026-10-07T21:10:46.079788Z",
+ "updated": "2026-10-08T06:02:22.918005Z",
  "dm": [],
- "dm_error": "<HTTPError 404: 'Not Found'>",
- "dm_unmatched": [
-  "dm Tübinger Straße 3e",
-  "dm Plinganserstraße 33"
- ],
+ "dm_error": "RuntimeError('dm-Bestandsabfrage nicht erreichbar (siehe dm_debug)')",
+ "dm_unmatched": [],
  "links": {
   "Rossmann: alle Lini's Bites": "https://www.rossmann.de/de/alle-marken/linis-bites/c/online-dachmarke_17644792",
   "Edeka Marktsuche (kein Bestand abrufbar)": "https://www.edeka.de/marktsuche.jsp",
   "Alnatura Marktfinder (kein Bestand abrufbar)": "https://www.alnatura.de/de-de/maerkte/marktfinder/"
  },
  "dm_products": {
+  "3121779": "Vanilla Cookie",
+  "3121805": "Carrot Cake",
+  "3121823": "Tiramisu",
   "1714108": "Raspberry Almond",
   "2975242": "Salted Pistachio",
   "1714169": "Salted Peanut Butter",
   "1714136": "Creamy Coconut",
-  "3121823": "Tiramisu",
   "3105015": "Matcha Raspberry",
   "3121815": "White Hazelnut"
  },
@@ -26,18 +25,35 @@
    "https://product-search.services.dmtech.com/de/search/static?query=lini%27s+bites+pralinis&pageSize=40"
   ],
   [
-   400,
-   "https://store-data-service.services.dmtech.com/stores/bbox/48.06193,11.45849,48.20607,11.67471",
-   "{\"detail\":\"Failed to convert 'boundingBox' with value: '48.06193,11.45849,48.20607,11.67471'\",\"instance\":\"/stores/bbox/48.06193,11.45849,48.20607,11.67471\",\"status\":400,\"title\":\"Bad Request\"}"
-  ],
-  [
    "ok",
    "https://store-data-service.services.dmtech.com/stores/nearby/48.13400,11.56660/8?countryCode=DE"
   ],
   [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/nearby/48.14000,11.51000/3?countryCode=DE"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/nearby/48.11950,11.54550/3?countryCode=DE"
+  ],
+  [
+   "dm_stores_gefunden",
+   24
+  ],
+  [
    404,
-   "https://products.dm.de/store-availability/DE/availability?dans=1714108%2C2975242%2C1714169%2C1714136%2C3121823%2C3105015%2C3121815&storeNumbers=1917%2C2661%2C2528%2C237%2",
-   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Wed Oct 07 21:10:48 UTC 2026</div><div>[b779eff7-"
+   "https://products.dm.de/store-availability/DE/availability?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,312",
+   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:02:25 UTC 2026</div><div>[14c4e3be-"
+  ],
+  [
+   404,
+   "https://products.dm.de/store-availability/de/availability?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,312",
+   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:02:26 UTC 2026</div><div>[757f406d-"
+  ],
+  [
+   404,
+   "https://products.dm.de/store-availability/DE/availability/?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,31",
+   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:02:27 UTC 2026</div><div>[8ed2b87a-"
   ]
  ]
 }

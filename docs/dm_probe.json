@@ -1,12 +1,9 @@
 {
  "log": [
   "cookies ok",
-  "kein Klick Verfügbarkeit",
-  "kein Klick dm-Markt",
-  "kein Klick Markt wählen",
-  "kein Feld [role=dialog] input",
-  "kein Feld input[type=search]",
-  "kein Feld input[type=text]"
+  "buttons: Hauptnavigation | Kategorienavigation | Hauptinhalt | Nachhaltigkeit | Tipps & Trends | Rezepte | Services | Kundenservice | Jobs bei dm | Neu | Marken | Make-up | Pflege & Parfum | Haare | Gesundheit | Ernährung | Baby & Kind | Haushalt | Home & Living | Foto | Tier | Ausverkauf | Kostenloser Versand ab 59 € mit dm-Konto | Online bestellen & nach 2 Stunden abholen* | Dauerpreis - dauerhaft günstig einkaufen | Startseite | Snacks & Süßigkeiten | Schokolade & Schokoriegel | Lini's Bites | 3.9\n(128 Bewertungen) | Weitere Produktmerkmale | Versand | dm-Dauerpreis\nnicht erhöht seit 25.06.2024 | In den Warenkorb | Verfügbarkeit in einem dm-Markt prüfen | Gestern, heute, immer günstig:\n\nunser dm-Dauerpreis | Auflistung mit 3 Elementen. Zum Ende der Liste springen. | DE-ÖKO-037\nEU/Nicht-EU Landwirtschaft | Weitere Produkte von Lini's Bites | Auflistung mit 5 Elementen. Zum Ende der Liste springen. | Rezepte aus der alverde\n\nSüßer Erdnussriegel mit knackigen Nüssen | Rezepte\n\nFrühstücks-Cookies | Rezepte\n\nSaftiger Schokoladen-Zucchini-Cake im Glas | Rezepte\n\nMacarons mit Zimt und Schoko-Mohn-Füllung | Rezepte\n\nErdnuss-Schoko-Energyballs | Auflistung mit 10 Elementen. Zum Ende der Liste springen. | Pralinis Creamy Coconut, 46 g | Hinweise | Pralinis Salted Peanut Butter, 46 g | dm-Markt wählen | Pralinis Matcha Raspberry, 46 g | Pralinis Salted Pistachio, 46 g | Pralinis White Hazelnut, 46 g | Pralinis Tiramisu, 46 g | Cream Bites Raspberry, 42 g | Proteinriegel, Protein Bites Coconut",
+  "klick Markt",
+  "kein Eingabefeld"
  ],
  "net": [
   [
@@ -15,39 +12,7 @@
   ],
   [
    200,
-   "https://content.services.dmtech.com/rootpage-dm-shop-de-de?view=navigation&mrclx=true&touchpoint=web"
-  ],
-  [
-   200,
-   "https://assets.dm.de/om/health-related-tracking/prod/permitted-services-de.json"
-  ],
-  [
-   200,
-   "https://assets.dm.de/om/health-related-tracking/prod/permitted-services-de.json"
-  ],
-  [
-   200,
-   "https://assets.dm.de/om/health-related-tracking/prod/permitted-services-de.json"
-  ],
-  [
-   200,
-   "https://assets.dm.de/stoerungsbanner/rootpage-dm-shop-de-de/prod/message.json"
-  ],
-  [
-   200,
    "https://retail-media.services.dmtech.com/de/position-config?channel=web"
-  ],
-  [
-   200,
-   "https://assets.dm.de/cart/translations/cart/de-DE.json"
-  ],
-  [
-   200,
-   "https://assets.dm.de/cart/translations/cart-common/de-DE.json"
-  ],
-  [
-   200,
-   "https://direct.dy-api.eu/v2/serve/user/choose"
   ],
   [
    200,
@@ -55,31 +20,7 @@
   ],
   [
    200,
-   "https://content.services.dmtech.com/rootpage-dm-shop-de-de?view=footer&mrclx=true&touchpoint=web"
-  ],
-  [
-   200,
    "https://products.dm.de/product/products/detail/DE/dan/1714108"
-  ],
-  [
-   200,
-   "https://assets.dm.de/product/translations/v1/de-DE.json"
-  ],
-  [
-   200,
-   "https://content.services.dmtech.com/api/module/by-identifier/rootpage-dm-shop-de-de/dauerpreisbanner?mrclx=true&touchpoint=web"
-  ],
-  [
-   200,
-   "https://stars.services.dmtech.com/api/DE/v1/ratings/1714108/summary"
-  ],
-  [
-   200,
-   "https://stars.services.dmtech.com/api/DE/v3/native-form-config"
-  ],
-  [
-   200,
-   "https://stars.services.dmtech.com/api/DE/v2/reviews/web/1714108/teaser"
   ],
   [
    200,
@@ -91,47 +32,119 @@
   ],
   [
    200,
-   "https://content-search-service.prod.svc.dmtech.com/rootpage-dm-shop-de-de/teasers?count=5&offset=0&types=Page&mrclx=true&productCategories=041502&contentCategories=Beratung%2CRezept%2CStep-by-Step+Tutorials%2CThemenwelt%"
-  ],
-  [
-   200,
    "https://products.dm.de/availability/api/v2/detail/DE/1714108"
   ],
   [
    200,
-   "https://products.dm.de/product/products/tiles/DE/dans/1714136,2483104,3105015,3111173,3121815,3121823,3160737"
+   "https://products.dm.de/product/products/tiles/DE/dans/1488265,1544524,1670772,1674121,1714169,2975242,3058005,3064750,3095027,3129562"
   ],
   [
    200,
-   "https://apps.bazaarvoice.com/bfd/v1/clients/dm-de/api-products/cv2/resources/data/products.json?resource=products&filter=id%3Aeq%3A1714108&filter_reviews=contentlocale%3Aeq%3Ade*%2Cde_DE%2Cde_DE&filter_questions=contentl"
+   "https://products.dm.de/product/products/tiles/DE/dans/1714136,3105015,3111173,3121815,3121823,3160737"
   ],
   [
    200,
-   "https://apps.bazaarvoice.com/bfd/v1/clients/dm-de/api-products/cv2/resources/data/reviews.json?resource=reviews&action=REVIEWS_N_STATS&filter=productid%3Aeq%3A1714108&filter=contentlocale%3Aeq%3Ade*%2Cde_DE%2Cde_DE&filte"
+   "https://products.dm.de/availability/api/v2/tiles/DE/1488265,1544524,1670772,1674121,3058005,3129562"
   ],
   [
    200,
-   "https://products.dm.de/product/products/tiles/DE/dans/1470404,1488265,1544524,1670772,1674121,1714169,2975242,3058005,3095027,3129562"
+   "https://products.dm.de/product/products/tiles/DE/dans/1488265,1544524,1670772,1674121,3058005,3129562"
   ],
   [
    200,
-   "https://apps.bazaarvoice.com/bfd/v1/clients/dm-de/api-products/cv2/resources/data/reviews.json?resource=reviews&action=PHOTOS_TYPE&filter=productid%3Aeq%3A1714108&filter=contentlocale%3Aeq%3Ade*%2Cde_DE%2Cde_DE&filter=is"
+   "https://products.dm.de/availability/api/v2/tiles/DE/1714136,1714169,2975242,3064750,3095027,3105015,3111173,3121815,3121823,3160737"
   ],
   [
    200,
-   "https://products.dm.de/product/products/tiles/DE/dans/1470404,1488265,1544524,1670772,1674121,1714136,1714169,2483104,2975242,3058005,3095027,3105015,3111173,3121815,3121823,3129562,3160737"
+   "https://frontend-tracking-infra-service.services.dmtech.com/keys/algolia?1=1"
   ],
   [
    200,
-   "https://products.dm.de/availability/api/v2/tiles/DE/1470404,1488265,1544524,1670772,1674121,1714136,1714169,2483104,2975242,3058005,3095027,3105015,3111173,3121815,3121823,3129562,3160737"
+   "https://omc.dm.de/dm-drogerie/main/2/i.gif"
   ],
   [
    200,
-   "https://stars.services.dmtech.com/api/DE/v1/ratings/1714136,1714169,3105015,2975242,3121815,3121823,3160737,3111173,3095027,2483104,1670772,1674121,1544524,3129562,1488265,3058005,1470404/summary"
+   "https://omc.dm.de/dm-drogerie/main/2/i.gif"
   ],
   [
    200,
-   "https://products.dm.de/availability/api/v2/tiles/DE/1714108"
+   "https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws/events?cee=no"
+  ],
+  [
+   200,
+   "https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws/events?cee=no"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EA&_fplc=0&cid=471967051.1791439387&f"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://ssa.om.dm.de/g/collect?v=2&tid=G-ZPG4FKSNHK&gtm=45he6a61v9198836840za204zd9198836840xf3xg4&_p=1791439386628&gcs=G111&gcd=13r3v3r2r5l1&npa=0&dma_cps=a&dma=1&ecid=395338595&_eu=EAAAAAQ&_fplc=0&cid=471967051.1791439"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/storeproperties/list/DE"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/0?countryCode=DE"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/1?countryCode=DE"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/2?countryCode=DE"
+  ],
+  [
+   200,
+   "https://store-data-service.services.dmtech.com/api/v2/stores/cluster/55.39566968718752%2C5.315000000000734%2C45.857335302928945%2C15.185000000001482/3?countryCode=DE"
   ]
- ]
+ ],
+ "bodies": {
+  "https://products.dm.de/availability/api/v2/detail/DE/1714108": "{\"rows\":[{\"icon\":\"GREEN\",\"iconLabel\":\"Status grün\",\"text\":\"Lieferbar\",\"subText\":\"Standardversand 2-3 Werktage\"},{\"icon\":\"YELLOW\",\"iconLabel\":\"Status gelb\",\"text\":\"<linking>Verfügbarkeit in einem dm-Markt prüfen</linking>\"}],\"isPurchasable\":true,\"quantitySelection\":[1,2,3,4,5,6,7,8,9,10,11,12,24,36,48,60,72,84,96,108,120],\"isUserInExpressDeliveryArea\":false}",
+  "https://products.dm.de/availability/api/v2/tiles/DE/1714108": "{\"1714108\":{\"rows\":[{\"icon\":\"GREEN\",\"iconLabel\":\"Status grün\",\"text\":\"Lieferbar\"},{\"icon\":\"GRAY\",\"iconLabel\":\"Status grau\",\"text\":\"<linking>dm-Markt wählen</linking>\"}],\"isPurchasable\":true,\"isUserInExpressDeliveryArea\":true,\"a11yLabel\":\"Verfügbarkeit: Status grün Lieferbar, Status grau dm-Markt wählen\"}}"
+ }
 }
