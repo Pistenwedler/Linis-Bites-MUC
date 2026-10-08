@@ -181,6 +181,29 @@ def build_cards(dm, prods, li, old):
                           "image": l["image"], "url": l["url"], "online": l["online"]})
     return cards
 
+HIST = "docs/history.json"
+
+def update_history(dm, prods):
+    """Haelt nur Aenderungen fest: [Minute, Sorte, Filiale, 1=da/0=weg, (1=Startwert)]."""
+    try: h = json.load(open(HIST))
+    except Exception: h = {"v": 1, "first": None, "products": [], "stores": [], "cur": {}, "events": []}
+    now = int(datetime.datetime.utcnow().timestamp() // 60)
+    if h["first"] is None: h["first"] = now
+    def idx(lst, x):
+        if x not in lst: lst.append(x)
+        return lst.index(x)
+    for name in prods.values():
+        pi = idx(h["products"], name)
+        for s in dm:
+            si = idx(h["stores"], s["name"]); k = f"{pi}|{si}"
+            v = 1 if s["items"].get(name, {}).get("inStock") else 0
+            if k not in h["cur"]:
+                h["cur"][k] = v
+                if v: h["events"].append([now, pi, si, 1, 1])
+            elif h["cur"][k] != v:
+                h["cur"][k] = v; h["events"].append([now, pi, si, v])
+    json.dump(h, open(HIST, "w"), separators=(",", ":"))
+
 def ntfy(title, msg, click=None, prio=3, tags=None):
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     if not topic:
@@ -243,6 +266,8 @@ if __name__ == "__main__":
         try:
             r["cards"] = build_cards(r["dm"], r.get("dm_products", {}), lini(), old)
             if old_cards: events = compute_events(old_cards, r["cards"])
+            try: update_history(r["dm"], r.get("dm_products", {}))
+            except Exception as e: DEBUG.append(["history", repr(e)[:150]])
         except Exception as e: r["cards"] = old_cards; DEBUG.append(["cards", repr(e)[:150]])
     r["dm_debug"] = DEBUG[-20:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
