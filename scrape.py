@@ -1,8 +1,9 @@
 """dm-Filialverfuegbarkeit fuer die Laeden aus stores.json -> docs/data.json"""
-import json, math, os, re, time, datetime, urllib.request, urllib.parse, urllib.error, sys
+import json, math, os, re, time, datetime, urllib.request, urllib.parse, urllib.error, sys, html
 
 CENTER = (48.13333, 11.53361)  # Heimeranplatz (Wikipedia, S-/U-Bahnhof): Ausgangspunkt fuer die Entfernungen
 DM_BRAND_URL = "https://www.dm.de/marken/linis-bites-2349676"
+LINI = "https://linisbites.com"
 DM_FALLBACK = {"3121779": "Vanilla Cookie", "3121805": "Carrot Cake", "3121823": "Tiramisu"}
 UA = {"User-Agent": "Mozilla/5.0 (private hobby tracker)", "Accept": "application/json, text/html"}
 
@@ -141,13 +142,89 @@ def dm_diag(stores, prods):
         except Exception as e: out.append([u[:230], repr(e)[:120]])
     return out
 
+def lini():
+    """Liest die Pralinis-12er-Boxen und deren Onlineshop-Status aus Shopify."""
+    url = LINI + "/collections/pralinis/products.json?limit=250"
+    try:
+        data = get(url)
+        if not isinstance(data, dict) or not isinstance(data.get("products"), list):
+            raise ValueError("Shopify-Antwort ohne products-Liste")
+    except Exception as e:
+        DEBUG.append(["lini", "Onlineshop nicht abrufbar", repr(e)[:150]])
+        return {}
+
+    products = {}
+    for p in data["products"]:
+        if not isinstance(p, dict):
+            continue
+        title = html.unescape(str(p.get("title", "")))
+        if "pralini" not in title.lower():
+            continue
+        # Die 12er-Box ist das Referenzprodukt, nicht die Einzelpackung.
+        if not re.search(r"12er\s*box", title, re.I):
+            continue
+        name = re.sub(r"^\s*(?:Bio\s+)?Pralinis?\s*[-:]?\s*", "", title, flags=re.I)
+        name = re.sub(r"\s*[–-]\s*Community Edition.*$", "", name, flags=re.I)
+        name = re.sub(r"\s*\(12er\s*Box\).*", "", name, flags=re.I).strip()
+        if not name:
+            continue
+        handle = p.get("handle") or ""
+        link = LINI + "/products/" + urllib.parse.quote(str(handle)) if handle else ""
+        images = p.get("images") or []
+        image = p.get("image") or (images[0].get("src", "") if images and isinstance(images[0], dict) else "")
+        if isinstance(image, dict):
+            image = image.get("src", "")
+        if image and "width=" not in str(image):
+            image = str(image) + ("&" if "?" in str(image) else "?") + "width=400"
+        variants = p.get("variants") or []
+        flags = [v.get("available") for v in variants if isinstance(v, dict)]
+        online = any(flags) if flags and all(isinstance(f, bool) for f in flags) else None
+        products[name] = {"image": str(image or ""), "url": link, "online": online}
+    DEBUG.append(["lini_sorten", len(products)])
+    return products
+
+
+def build_cards(stores, prods, shop, old_counts, old_cards=None):
+    """Erzeugt das Kartenformat, das docs/index.html bereits erwartet."""
+    prior = {c["name"]: c for c in (old_cards or []) if c.get("name")}
+    tracked = set(prods.values())
+    names = tracked | set(shop) | set(prior)
+    cards = []
+
+    for name in names:
+        is_tracked = name in tracked
+        entries = []
+        if is_tracked:
+            for s in stores:
+                item = s.get("items", {}).get(name, {})
+                entries.append({"name": s["name"], "dist": s.get("dist"),
+                                "inStock": bool(item.get("inStock", False)),
+                                "text": item.get("text", "")})
+            entries.sort(key=lambda x: (x["dist"] is None, x["dist"] if x["dist"] is not None else 9999))
+        count = sum(x["inStock"] for x in entries)
+        prev = prior.get(name, {})
+        metadata = shop.get(name) or {}
+        card = {"name": name, "tracked": is_tracked,
+                "count": count, "total": len(entries), "stores": entries,
+                "image": metadata.get("image") or prev.get("image", ""),
+                "url": metadata.get("url") or prev.get("url", ""),
+                "online": metadata.get("online") if metadata.get("online") is not None else prev.get("online")}
+        if is_tracked and name in old_counts and old_counts[name] == 0 and count > 0:
+            card["new"] = True
+        cards.append(card)
+
+    # Verfuegbare dm-Sorten zuerst, dann andere dm-Sorten und reine Onlinesorten.
+    cards.sort(key=lambda c: (not c["tracked"], -c["count"], c["name"].lower()))
+    return cards
+
+
 HIST = "docs/history.json"
 
 def update_history(dm, prods):
     """Haelt nur Aenderungen fest: [Minute, Sorte, Filiale, 1=da/0=weg, (1=Startwert)]."""
     try: h = json.load(open(HIST))
     except Exception: h = {"v": 1, "first": None, "products": [], "stores": [], "cur": {}, "events": []}
-    now = int(datetime.datetime.utcnow().timestamp() // 60)
+    now = int(datetime.datetime.now(datetime.timezone.utc).timestamp() // 60)
     if h["first"] is None: h["first"] = now
     def idx(lst, x):
         if x not in lst: lst.append(x)
@@ -200,7 +277,7 @@ def send_events(ev):
 
 if __name__ == "__main__":
     cfg = json.load(open("stores.json"))
-    r = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "dm": [], "dm_error": None,
+    r = {"updated": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"), "dm": [], "dm_error": None,
          "dm_unmatched": [], "links": {"lini": LINI + "/collections/pralinis"}}
     try:
         prods = dm_products(); r["dm_products"] = prods
@@ -228,11 +305,14 @@ if __name__ == "__main__":
             partial = set(r.get("dm_partial", []))
             oc = {c["name"]: c for c in old_cards}
             r["cards"] = [dict(oc[c["name"]], stale=True) if c["name"] in partial and c["name"] in oc else c
-                          for c in build_cards(r["dm"], r.get("dm_products", {}), lini(), old)]
+                          for c in build_cards(r["dm"], r.get("dm_products", {}), lini(), old, old_cards)]
             if old_cards: events = compute_events(old_cards, r["cards"])
             try: update_history(r["dm"], {d: n for d, n in r.get("dm_products", {}).items() if n not in partial})
             except Exception as e: DEBUG.append(["history", repr(e)[:150]])
-        except Exception as e: r["cards"] = old_cards; DEBUG.append(["cards", repr(e)[:150]])
+        except Exception as e:
+            r["cards"] = old_cards
+            r["dm_error"] = "Kartenaufbau fehlgeschlagen: " + repr(e)
+            DEBUG.append(["cards", repr(e)[:150]])
     r["dm_debug"] = DEBUG[-40:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
     if os.environ.get("NTFY_TEST") == "true":
