@@ -1,64 +1,11 @@
 {
- "updated": "2026-10-08T08:51:24.241559Z",
+ "updated": "2026-10-08T17:55:20.687736Z",
  "dm": [
-  {
-   "id": "1917",
-   "sid": "D37L",
-   "name": "dm Tegernseer Landstr. 64",
-   "dist": 2.24,
-   "items": {
-    "Vanilla Cookie": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Carrot Cake": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Tiramisu": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "22 Stück"
-    },
-    "Salted Pistachio": {
-     "inStock": true,
-     "level": null,
-     "text": "67 Stück"
-    },
-    "Salted Peanut Butter": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Creamy Coconut": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Matcha Raspberry": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "White Hazelnut": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    }
-   }
-  },
   {
    "id": "2661",
    "sid": "D4EL",
    "name": "dm Kühbachstraße 3-9",
-   "dist": 1.97,
+   "dist": 3.43,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -78,17 +25,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "25 Stück"
+     "text": "18 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "28 Stück"
+     "text": "26 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "9 Stück"
+     "text": "4 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -111,7 +58,7 @@
    "id": "2528",
    "sid": "D498",
    "name": "dm Klenzestraße 52a",
-   "dist": 0.67,
+   "dist": 2.82,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -131,17 +78,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "7 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "19 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "19 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -164,7 +111,7 @@
    "id": "237",
    "sid": "D09L",
    "name": "dm Lindwurmstraße 95",
-   "dist": 0.91,
+   "dist": 1.83,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -184,17 +131,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "21 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "16 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "17 Stück"
+     "text": "13 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -217,7 +164,7 @@
    "id": "3123",
    "sid": "D5A3",
    "name": "dm Sendlinger-Tor-Platz 11",
-   "dist": 0.03,
+   "dist": 2.47,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -237,17 +184,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "25 Stück"
+     "text": "21 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "19 Stück"
+     "text": "13 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "36 Stück"
+     "text": "33 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -270,7 +217,7 @@
    "id": "2795",
    "sid": "D4KB",
    "name": "dm Goethestraße 30",
-   "dist": 0.63,
+   "dist": 1.86,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -295,7 +242,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "20 Stück"
+     "text": "18 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -323,7 +270,7 @@
    "id": "2691",
    "sid": "D4G3",
    "name": "dm Theresienhöhe 5",
-   "dist": 1.41,
+   "dist": 1.13,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -343,12 +290,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "36 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "4 Stück"
+     "text": "14 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -376,7 +323,7 @@
    "id": "1973",
    "sid": "D3A5",
    "name": "dm Westendstraße 98",
-   "dist": 2.27,
+   "dist": 0.6,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -396,12 +343,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "13 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "17 Stück"
+     "text": "27 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -429,7 +376,7 @@
    "id": "2962",
    "sid": "D53A",
    "name": "dm Tübinger Straße 3e",
-   "dist": 3.2,
+   "dist": 0.75,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -454,12 +401,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "12 Stück"
+     "text": "11 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "2 Stück"
+     "text": "1 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -482,7 +429,7 @@
    "id": "320",
    "sid": "D0D8",
    "name": "dm Plinganserstraße 33",
-   "dist": 2.59,
+   "dist": 1.73,
    "items": {
     "Vanilla Cookie": {
      "inStock": false,
@@ -502,7 +449,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -512,7 +459,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "27 Stück"
+     "text": "23 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -533,7 +480,9 @@
   }
  ],
  "dm_error": null,
- "dm_unmatched": [],
+ "dm_unmatched": [
+  "dm Tegernseer Landstr. 64"
+ ],
  "links": {
   "lini": "https://linisbites.com/collections/pralinis"
  },
@@ -548,284 +497,260 @@
   "3105015": "Matcha Raspberry",
   "3121815": "White Hazelnut"
  },
+ "dm_partial": [],
  "cards": [
   {
    "name": "Raspberry Almond",
    "tracked": true,
-   "count": 10,
-   "total": 10,
+   "count": 9,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": true,
-     "text": "25 Stück"
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": true,
-     "text": "16 Stück"
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": true,
-     "text": "11 Stück"
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": true,
-     "text": "24 Stück"
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": true,
-     "text": "14 Stück"
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": true,
-     "text": "25 Stück"
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": true,
-     "text": "22 Stück"
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
+     "dist": 0.6,
      "inStock": true,
-     "text": "14 Stück"
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
-     "inStock": true,
-     "text": "24 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
      "inStock": true,
      "text": "15 Stück"
-    }
-   ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond",
-   "online": true
-  },
-  {
-   "name": "Salted Pistachio",
-   "tracked": true,
-   "count": 10,
-   "total": 10,
-   "stores": [
-    {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": true,
-     "text": "19 Stück"
     },
     {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
      "inStock": true,
-     "text": "20 Stück"
+     "text": "36 Stück"
     },
     {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
      "inStock": true,
      "text": "23 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
+     "dist": 1.83,
      "inStock": true,
-     "text": "18 Stück"
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": true,
-     "text": "4 Stück"
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": true,
-     "text": "28 Stück"
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": true,
-     "text": "67 Stück"
-    },
-    {
-     "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": true,
-     "text": "17 Stück"
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
-     "inStock": true,
-     "text": "30 Stück"
-    },
-    {
-     "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
-     "inStock": true,
-     "text": "12 Stück"
-    }
-   ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
-   "online": true,
-   "new": true
-  },
-  {
-   "name": "Salted Peanut Butter",
-   "tracked": true,
-   "count": 7,
-   "total": 10,
-   "stores": [
-    {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": true,
-     "text": "36 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Goethestraße 30",
-     "dist": 0.63,
+     "dist": 1.86,
      "inStock": true,
-     "text": "19 Stück"
+     "text": "16 Stück"
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": true,
+     "text": "21 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
+     "dist": 2.82,
      "inStock": true,
-     "text": "22 Stück"
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": true,
-     "text": "17 Stück"
+     "text": "7 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
+     "dist": 3.43,
      "inStock": true,
-     "text": "9 Stück"
-    },
+     "text": "18 Stück"
+    }
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond-12er-box",
+   "online": false
+  },
+  {
+   "name": "Salted Pistachio",
+   "tracked": true,
+   "count": 9,
+   "total": 9,
+   "stores": [
     {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "name": "dm Westendstraße 98",
+     "dist": 0.6,
      "inStock": true,
      "text": "27 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
      "inStock": true,
-     "text": "2 Stück"
+     "text": "11 Stück"
     },
     {
      "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
+     "dist": 1.13,
+     "inStock": true,
+     "text": "14 Stück"
     },
     {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": true,
+     "text": "30 Stück"
     },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": true,
+     "text": "16 Stück"
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": true,
+     "text": "18 Stück"
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": true,
+     "text": "13 Stück"
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": true,
+     "text": "19 Stück"
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
+     "inStock": true,
+     "text": "26 Stück"
+    }
+   ],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio-12er-box",
+   "online": true
+  },
+  {
+   "name": "Salted Peanut Butter",
+   "tracked": true,
+   "count": 7,
+   "total": 9,
+   "stores": [
     {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
+    },
+    {
+     "name": "dm Tübinger Straße 3e",
+     "dist": 0.75,
+     "inStock": true,
+     "text": "1 Stück"
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": true,
+     "text": "23 Stück"
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": true,
+     "text": "13 Stück"
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": true,
+     "text": "19 Stück"
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": true,
+     "text": "33 Stück"
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": true,
+     "text": "19 Stück"
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
+     "inStock": true,
+     "text": "4 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-peanut-packshot-detailshot-12-box_old.jpg?v=1789022550&width=400",
-   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis",
+   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis-12er-box",
    "online": true
   },
   {
    "name": "Carrot Cake",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
@@ -838,355 +763,345 @@
    "name": "Creamy Coconut",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-creamy-coconut-packshot-detailshot-12-box.jpg?v=1783949114&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut",
+   "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut-12er-box",
    "online": true
   },
   {
    "name": "Matcha Raspberry",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-matcha-raspberry-packshot-detailshot-12-box.jpg?v=1783949123&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry",
+   "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry-12er-box",
    "online": true
   },
   {
    "name": "Tiramisu",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
+   "url": "https://linisbites.com/products/bio-pralinis-tiramisu-12er-box",
    "online": true
   },
   {
    "name": "Vanilla Cookie",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-vanilla-cookie-packshot-detailshot-12-box.jpg?v=1783949092&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie",
+   "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie-12er-box",
    "online": true
   },
   {
    "name": "White Hazelnut",
    "tracked": true,
    "count": 0,
-   "total": 10,
+   "total": 9,
    "stores": [
     {
-     "name": "dm Sendlinger-Tor-Platz 11",
-     "dist": 0.03,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Goethestraße 30",
-     "dist": 0.63,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Klenzestraße 52a",
-     "dist": 0.67,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Lindwurmstraße 95",
-     "dist": 0.91,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.41,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Kühbachstraße 3-9",
-     "dist": 1.97,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 2.24,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Westendstraße 98",
-     "dist": 2.27,
-     "inStock": false,
-     "text": ""
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 2.59,
+     "dist": 0.6,
      "inStock": false,
      "text": ""
     },
     {
      "name": "dm Tübinger Straße 3e",
-     "dist": 3.2,
+     "dist": 0.75,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Lindwurmstraße 95",
+     "dist": 1.83,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Goethestraße 30",
+     "dist": 1.86,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Sendlinger-Tor-Platz 11",
+     "dist": 2.47,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Klenzestraße 52a",
+     "dist": 2.82,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Kühbachstraße 3-9",
+     "dist": 3.43,
      "inStock": false,
      "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-white-hazelnut-packshot-detailshot-12-box.jpg?v=1783949140&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-white-hazelnut-community-edition-12er-box",
+   "online": true
+  },
+  {
+   "name": "Brownie Caramel",
+   "tracked": false,
+   "count": 0,
+   "total": 0,
+   "stores": [],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel-12er-box",
+   "online": true
+  },
+  {
+   "name": "Hazelnut Choco",
+   "tracked": false,
+   "count": 0,
+   "total": 0,
+   "stores": [],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco-12er-box",
    "online": true
   },
   {
@@ -1206,27 +1121,7 @@
    "total": 0,
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-white-coconut-packshot-detailshot-12-box.jpg?v=1783949098&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-white-coconut",
-   "online": true
-  },
-  {
-   "name": "Hazelnut Choco",
-   "tracked": false,
-   "count": 0,
-   "total": 0,
-   "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco",
-   "online": true
-  },
-  {
-   "name": "Brownie Caramel",
-   "tracked": false,
-   "count": 0,
-   "total": 0,
-   "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
+   "url": "https://linisbites.com/products/bio-pralinis-white-coconut-12er-box",
    "online": true
   }
  ],
@@ -1237,7 +1132,7 @@
   ],
   [
    "ok",
-   "https://store-data-service.services.dmtech.com/stores/nearby/48.13400,11.56660/8?countryCode=DE"
+   "https://store-data-service.services.dmtech.com/stores/nearby/48.13333,11.53361/8?countryCode=DE"
   ],
   [
    "ok",
@@ -1249,47 +1144,47 @@
   ],
   [
    "dm_stores_gefunden",
-   24
+   17
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121779/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121779/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "dm_antwort_beispiel",
-   "{\"D37L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
+   "{\"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D0D8\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121823/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121823/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714169/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714169/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714136/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714136/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
