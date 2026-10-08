@@ -81,25 +81,44 @@ def dm_stores(wanted):
         label = f"dm {w['street']} {w['no']}"
         if not hit: unmatched.append(label); continue
         loc = hit.get("location", {}); lat, lng = loc.get("lat"), loc.get("lon", loc.get("lng"))
-        found.append({"id": str(hit.get("storeNumber")), "name": label,
+        found.append({"id": str(hit.get("storeNumber")), "sid": str(hit.get("storeId") or ""), "name": label,
                       "dist": round(km(lat, lng), 2) if lat else None})
     return found, unmatched
 
+def find(data, sid):
+    """Sucht den Eintrag zu einer Filial-ID in beliebig verschachtelter Antwort."""
+    if isinstance(data, dict):
+        if sid in data: return data[sid]
+        if sid in [str(v) for v in data.values() if isinstance(v, (str, int))]: return data
+        for v in data.values():
+            r = find(v, sid)
+            if r is not None: return r
+    elif isinstance(data, list):
+        for v in data:
+            r = find(v, sid)
+            if r is not None: return r
+    return None
+
+def judge(v):
+    txt = json.dumps(v, ensure_ascii=False).upper()
+    level = None
+    if isinstance(v, dict):
+        for k in ("stockLevel", "stock", "quantity", "amount"):
+            if isinstance(v.get(k), (int, float)): level = int(v[k]); break
+    ok = "GREEN" in txt or '"INSTOCK": TRUE' in txt or bool(level)
+    return {"inStock": ok, "level": level, "text": f"{level} Stück" if level else ""}
+
 def dm_availability(stores, prods):
-    q = "dans=" + ",".join(prods) + "&storeNumbers=" + ",".join(x["id"] for x in stores)
-    av = None
-    for base in ("https://products.dm.de/store-availability/DE/availability",
-                 "https://products.dm.de/store-availability/de/availability",
-                 "https://products.dm.de/store-availability/DE/availability/",):
-        try: av = get(f"{base}?{q}"); break
+    ids = ",".join(x["sid"] for x in stores if x.get("sid"))
+    for x in stores: x["items"] = {}
+    first = True
+    for dan, name in prods.items():
+        try: data = get(f"https://products.dm.de/availability/api/v2/map/basic/DE/{dan}/{ids}")
         except Exception: continue
-    if av is None: raise RuntimeError("dm-Bestandsabfrage nicht erreichbar (siehe dm_debug)")
-    av = av.get("storeAvailabilities", av)
-    for x in stores:
-        x["items"] = {}
-        for it in av.get(x["id"], []):
-            n = prods.get(str(it.get("dan")))
-            if n: x["items"][n] = {"inStock": bool(it.get("inStock")), "level": it.get("stockLevel")}
+        if first: DEBUG.append(["dm_antwort_beispiel", json.dumps(data, ensure_ascii=False)[:700]]); first = False
+        for x in stores:
+            v = find(data, x["sid"])
+            if v is not None: x["items"][name] = judge(v)
     return stores
 
 if __name__ == "__main__":
@@ -110,6 +129,7 @@ if __name__ == "__main__":
         prods = dm_products(); r["dm_products"] = prods
         stores, r["dm_unmatched"] = dm_stores(cfg["dm"])
         r["dm"] = dm_availability(stores, prods) if stores else []
+        if r["dm"] and not any(x["items"] for x in r["dm"]): r["dm_error"] = "Bestandsantwort nicht erkannt (siehe dm_debug)"
     except Exception as e:
         r["dm_error"] = repr(e); print("dm Fehler:", e, file=sys.stderr)
     r["dm_debug"] = DEBUG[-20:]
