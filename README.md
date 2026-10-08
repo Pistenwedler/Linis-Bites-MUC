@@ -10,7 +10,8 @@ linisbites.com und schickt per ntfy eine Push-Nachricht, wenn eine Sorte wieder 
 - `docs/index.html`  Dashboard, liest `docs/data.json`
 - `.github/workflows/update.yml`  stuendlicher Lauf (cron `7 * * * *`) und Test-Push per Hand
 - `rossmann.py`      geparkt, siehe unten
-- `docs/data.json`   wird automatisch geschrieben, nicht von Hand aendern
+- `docs/data.json`   aktueller Stand, wird automatisch geschrieben
+- `docs/history.json` Verlauf (nur Aenderungen), wird automatisch geschrieben; Grundlage fuer Zeitstrahl und Heatmap
 
 ## Push einrichten (einmalig)
 1. ntfy-App installieren (iOS/Android) und ein Thema mit einem langen, zufaelligen Namen abonnieren.
@@ -25,6 +26,11 @@ linisbites.com und schickt per ntfy eine Push-Nachricht, wenn eine Sorte wieder 
 - Sorte war im Lini's Online-Shop nicht verfuegbar und ist es wieder.
 - Einmalig, wenn die dm-Abfrage anfaengt zu scheitern.
 Bei dm-Fehlern bleibt der alte Stand erhalten, damit es keine falschen "wieder da"-Meldungen gibt.
+
+## Verlauf
+Ab dem ersten Lauf mit dieser Version wird jede Aenderung (Sorte x Filiale: da / nicht mehr da) festgehalten.
+Im Dashboard: Sortenkarte aufklappen -> Zeitstrahl pro Filiale (7/14/30 Tage) und Heatmap Wochentag x Uhrzeit.
+Ein Muster-Text erscheint ab 5 beobachteten Auffuellungen. Es gibt keine Rueckschau, dm liefert keine Historie.
 
 ## Anpassen
 - Filialen: `stores.json`, Abschnitt `dm` (Strasse, Hausnummer, PLZ).
