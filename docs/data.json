@@ -1,7 +1,538 @@
 {
- "updated": "2026-10-08T06:32:07.191970Z",
- "dm": [],
- "dm_error": "RuntimeError('dm-Bestandsabfrage nicht erreichbar (siehe dm_debug)')",
+ "updated": "2026-10-08T06:42:00.988920Z",
+ "dm": [
+  {
+   "id": "1917",
+   "sid": "D37L",
+   "name": "dm Tegernseer Landstr. 64",
+   "dist": 2.24,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "2661",
+   "sid": "D4EL",
+   "name": "dm Kühbachstraße 3-9",
+   "dist": 1.97,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "2528",
+   "sid": "D498",
+   "name": "dm Klenzestraße 52a",
+   "dist": 0.67,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "237",
+   "sid": "D09L",
+   "name": "dm Lindwurmstraße 95",
+   "dist": 0.91,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "3123",
+   "sid": "D5A3",
+   "name": "dm Sendlinger-Tor-Platz 11",
+   "dist": 0.03,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "2795",
+   "sid": "D4KB",
+   "name": "dm Goethestraße 30",
+   "dist": 0.63,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "2691",
+   "sid": "D4G3",
+   "name": "dm Theresienhöhe 5",
+   "dist": 1.41,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "1973",
+   "sid": "D3A5",
+   "name": "dm Westendstraße 98",
+   "dist": 2.27,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "2962",
+   "sid": "D53A",
+   "name": "dm Tübinger Straße 3e",
+   "dist": 3.2,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
+  {
+   "id": "320",
+   "sid": "D0D8",
+   "name": "dm Plinganserstraße 33",
+   "dist": 2.59,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Salted Peanut Butter": {
+     "inStock": true,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  }
+ ],
+ "dm_error": null,
  "dm_unmatched": [],
  "links": {
   "Rossmann: alle Lini's Bites": "https://www.rossmann.de/de/alle-marken/linis-bites/c/online-dachmarke_17644792",
@@ -41,19 +572,44 @@
    24
   ],
   [
-   404,
-   "https://products.dm.de/store-availability/DE/availability?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,312",
-   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:32:09 UTC 2026</div><div>[f6b62028-"
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121779/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
-   404,
-   "https://products.dm.de/store-availability/de/availability?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,312",
-   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:32:10 UTC 2026</div><div>[1f56196a-"
+   "dm_antwort_beispiel",
+   "{\"D37L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
   ],
   [
-   404,
-   "https://products.dm.de/store-availability/DE/availability/?dans=3121779,3121805,3121823,1714108,2975242,1714169,1714136,3105015,3121815&storeNumbers=1917,2661,2528,237,31",
-   "<html><body><h1>Whitelabel Error Page</h1><p>This application has no configured error view, so you are seeing this as a fallback.</p><div id='created'>Thu Oct 08 06:32:10 UTC 2026</div><div>[25b75f01-"
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121823/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714169/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714136/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ]
  ]
 }
