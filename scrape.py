@@ -1,5 +1,5 @@
 """dm-Filialverfuegbarkeit fuer die Laeden aus stores.json -> docs/data.json"""
-import json, math, re, datetime, urllib.request, urllib.parse, urllib.error, sys
+import json, math, os, re, datetime, urllib.request, urllib.parse, urllib.error, sys
 
 CENTER = (48.1340, 11.5666)  # Sendlinger Tor, nur fuer Entfernungsanzeige/Suchgebiet
 DM_BRAND_URL = "https://www.dm.de/marken/linis-bites-2349676"
@@ -181,6 +181,40 @@ def build_cards(dm, prods, li, old):
                           "image": l["image"], "url": l["url"], "online": l["online"]})
     return cards
 
+def ntfy(title, msg, click=None, prio=3, tags=None):
+    topic = os.environ.get("NTFY_TOPIC", "").strip()
+    if not topic:
+        print("ntfy: NTFY_TOPIC nicht gesetzt, keine Push-Nachricht"); return
+    body = {"topic": topic, "title": title, "message": msg, "priority": prio, "tags": tags or []}
+    click = click or os.environ.get("DASHBOARD_URL", "").strip()
+    if click: body["click"] = click
+    req = urllib.request.Request("https://ntfy.sh", data=json.dumps(body).encode("utf-8"),
+                                 headers={"Content-Type": "application/json"})
+    try: urllib.request.urlopen(req, timeout=20).read(); print("ntfy gesendet:", title)
+    except Exception as e: print("ntfy Fehler:", e, file=sys.stderr)
+
+def compute_events(old_cards, new_cards):
+    oc = {c["name"]: c for c in old_cards}; ev = []
+    for c in new_cards:
+        o = oc.get(c["name"])
+        if not o: continue
+        if c.get("tracked") and o.get("tracked") and o.get("count", 0) == 0 and c["count"] > 0:
+            ins = [x for x in c["stores"] if x["inStock"]]
+            shown = ", ".join(x["name"].replace("dm ", "", 1) + (f" ({x['text']})" if x.get("text") else "") for x in ins[:4])
+            more = f" und {len(ins) - 4} weitere" if len(ins) > 4 else ""
+            ev.append({"title": f"🍫 {c['name']} ist wieder da", "msg": f"dm: {shown}{more}", "prio": 4,
+                       "tags": ["chocolate_bar"]})
+        if o.get("online") is False and c.get("online") is True:
+            ev.append({"title": f"🛒 {c['name']} wieder im Online-Shop", "msg": "Bei Lini's wieder bestellbar.",
+                       "click": c.get("url"), "prio": 3, "tags": ["shopping_cart"]})
+    return ev
+
+def send_events(ev):
+    if len(ev) > 4:
+        ntfy(f"🍫 {len(ev)} Neuigkeiten bei Lini's Bites", "; ".join(e["title"].split(" ", 1)[1] for e in ev)[:400], prio=4)
+    else:
+        for e in ev: ntfy(e["title"], e["msg"], e.get("click"), e.get("prio", 3), e.get("tags"))
+
 if __name__ == "__main__":
     cfg = json.load(open("stores.json"))
     r = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "dm": [], "dm_error": None,
@@ -192,10 +226,27 @@ if __name__ == "__main__":
         if r["dm"] and not any(x["items"] for x in r["dm"]): r["dm_error"] = "Bestandsantwort nicht erkannt (siehe dm_debug)"
     except Exception as e:
         r["dm_error"] = repr(e); print("dm Fehler:", e, file=sys.stderr)
-    try: old = {c["name"]: c["count"] for c in json.load(open("docs/data.json")).get("cards", [])}
-    except Exception: old = {}
-    try: r["cards"] = build_cards(r["dm"], r.get("dm_products", {}), lini(), old)
-    except Exception as e: r["cards"] = []; DEBUG.append(["cards", repr(e)[:150]])
+    try: old_data = json.load(open("docs/data.json"))
+    except Exception: old_data = {}
+    old_cards = old_data.get("cards", [])
+    old = {c["name"]: c["count"] for c in old_cards}
+    events = []
+    if r["dm_error"]:
+        # Bei dm-Fehler alten Stand behalten, damit es keine falschen "wieder da"-Meldungen gibt
+        if old_cards:
+            r["dm_error"] += " - zeige Stand von " + str(old_data.get("updated", "?"))[:16].replace("T", " ") + " UTC"
+            r["cards"] = old_cards
+        else: r["cards"] = []
+        if not old_data.get("dm_error"):
+            ntfy("⚠️ dm-Abfrage fehlgeschlagen", str(r["dm_error"])[:200], prio=3, tags=["warning"])
+    else:
+        try:
+            r["cards"] = build_cards(r["dm"], r.get("dm_products", {}), lini(), old)
+            if old_cards: events = compute_events(old_cards, r["cards"])
+        except Exception as e: r["cards"] = old_cards; DEBUG.append(["cards", repr(e)[:150]])
     r["dm_debug"] = DEBUG[-20:]
     json.dump(r, open("docs/data.json", "w"), ensure_ascii=False, indent=1)
+    if os.environ.get("NTFY_TEST") == "true":
+        ntfy("✅ Test erfolgreich", "Push-Nachrichten vom Lini's Bites Tracker funktionieren.", prio=3, tags=["white_check_mark"])
+    send_events(events)
     print(len(r["dm"]), "dm-Filialen geprüft; nicht zugeordnet:", r["dm_unmatched"])
