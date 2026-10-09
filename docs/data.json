@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T02:05:40.901087Z",
+ "updated": "2026-10-09T05:25:34.290448Z",
  "dm": [
   {
    "id": "2661",
@@ -561,8 +561,8 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond-12er-box",
-   "online": false
+   "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond",
+   "online": true
   },
   {
    "name": "Salted Pistachio",
@@ -626,7 +626,7 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
    "online": true
   },
   {
@@ -636,22 +636,10 @@
    "total": 9,
    "stores": [
     {
-     "name": "dm Westendstraße 98",
-     "dist": 0.6,
-     "inStock": false,
-     "text": ""
-    },
-    {
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
      "text": "1 Stück"
-    },
-    {
-     "name": "dm Theresienhöhe 5",
-     "dist": 1.13,
-     "inStock": false,
-     "text": ""
     },
     {
      "name": "dm Plinganserstraße 33",
@@ -688,10 +676,22 @@
      "dist": 3.43,
      "inStock": true,
      "text": "4 Stück"
+    },
+    {
+     "name": "dm Westendstraße 98",
+     "dist": 0.6,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Theresienhöhe 5",
+     "dist": 1.13,
+     "inStock": false,
+     "text": ""
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-peanut-packshot-detailshot-12-box_old.jpg?v=1789022550&width=400",
-   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis-12er-box",
+   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis",
    "online": true
   },
   {
@@ -821,7 +821,7 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-creamy-coconut-packshot-detailshot-12-box.jpg?v=1783949114&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut",
    "online": true
   },
   {
@@ -886,7 +886,7 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-matcha-raspberry-packshot-detailshot-12-box.jpg?v=1783949123&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry",
    "online": true
   },
   {
@@ -951,7 +951,7 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-tiramisu-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
    "online": true
   },
   {
@@ -1016,7 +1016,7 @@
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-vanilla-cookie-packshot-detailshot-12-box.jpg?v=1783949092&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie",
    "online": true
   },
   {
@@ -1085,26 +1085,6 @@
    "online": true
   },
   {
-   "name": "Brownie Caramel",
-   "tracked": false,
-   "count": 0,
-   "total": 0,
-   "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel-12er-box",
-   "online": true
-  },
-  {
-   "name": "Hazelnut Choco",
-   "tracked": false,
-   "count": 0,
-   "total": 0,
-   "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco-12er-box",
-   "online": true
-  },
-  {
    "name": "Salted Pretzel",
    "tracked": false,
    "count": 0,
@@ -1121,7 +1101,27 @@
    "total": 0,
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-white-coconut-packshot-detailshot-12-box.jpg?v=1783949098&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-white-coconut-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-white-coconut",
+   "online": true
+  },
+  {
+   "name": "Hazelnut Choco",
+   "tracked": false,
+   "count": 0,
+   "total": 0,
+   "stores": [],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco",
+   "online": true
+  },
+  {
+   "name": "Brownie Caramel",
+   "tracked": false,
+   "count": 0,
+   "total": 0,
+   "stores": [],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
    "online": true
   }
  ],
