@@ -56,23 +56,41 @@ def dm_products():
         print("dm Produktsuche:", e, file=sys.stderr)
     return prods or DM_FALLBACK
 
+def dm_match(stores, w):
+    for s in stores:
+        blob = norm(" ".join(str(v) for v in (s.get("address") or {}).values()))
+        if norm(w["street"]) in blob and norm(w["no"]) in blob and w["plz"] in blob:
+            return s
+    return None
+
+def dm_list(text):
+    """dm-Filialsuche nach Adresse (wie im Dialog auf dm.de)."""
+    url = ("https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=" +
+           urllib.parse.quote_plus(text) + "&fields=storeId,storeNumber,address,storeUrlPath,location")
+    data = get(url)
+    return data.get("stores", data) if isinstance(data, dict) else data
+
 def dm_stores(wanted):
-    allst = {}
-    for la, lo, rad in ((CENTER[0], CENTER[1], 8), (48.1400, 11.5100, 3), (48.1195, 11.5455, 3)):
+    """Jede Wunschfiliale wird einzeln ueber ihre Adresse gesucht (unabhaengig vom Entfernungs-Ausgangspunkt)."""
+    allst, hits = {}, {}
+    for w in wanted:
         try:
-            data = get(f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/{rad}?countryCode=DE")
-            for x in (data.get("stores", data) if isinstance(data, dict) else data):
+            for x in dm_list(f"{w['street']} {w['no']}, {w['plz']} München"):
                 allst[str(x.get("storeNumber"))] = x
-        except Exception: continue
+        except Exception: pass
+        hits[w["street"] + w["no"]] = dm_match(list(allst.values()), w)
+    if any(v is None for v in hits.values()):   # Reserve: Umkreissuche
+        for la, lo, rad in ((CENTER[0], CENTER[1], 8), (48.1400, 11.5100, 3), (48.1195, 11.5455, 3), (48.1185, 11.5800, 3)):
+            try:
+                data = get(f"https://store-data-service.services.dmtech.com/stores/nearby/{la:.5f},{lo:.5f}/{rad}?countryCode=DE")
+                for x in (data.get("stores", data) if isinstance(data, dict) else data):
+                    allst[str(x.get("storeNumber"))] = x
+            except Exception: continue
     stores = list(allst.values()); DEBUG.append(["dm_stores_gefunden", len(stores)])
     if not stores: raise RuntimeError("keine dm-Filialliste abrufbar (siehe dm_debug)")
     found, unmatched = [], []
     for w in wanted:
-        hit = None
-        for s in stores:
-            blob = norm(" ".join(str(v) for v in (s.get("address") or {}).values()))
-            if norm(w["street"]) in blob and norm(w["no"]) in blob and w["plz"] in blob:
-                hit = s; break
+        hit = dm_match(stores, w)
         label = f"dm {w['street']} {w['no']}"
         if not hit: unmatched.append(label); continue
         loc = hit.get("location", {}); lat, lng = loc.get("lat"), loc.get("lon", loc.get("lng"))
