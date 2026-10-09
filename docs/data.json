@@ -1,6 +1,59 @@
 {
- "updated": "2026-10-09T05:25:34.290448Z",
+ "updated": "2026-10-09T05:29:54.387602Z",
  "dm": [
+  {
+   "id": "1917",
+   "sid": "D37L",
+   "name": "dm Tegernseer Landstr. 64",
+   "dist": 3.96,
+   "items": {
+    "Vanilla Cookie": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Carrot Cake": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "22 Stück"
+    },
+    "Salted Pistachio": {
+     "inStock": true,
+     "level": null,
+     "text": "66 Stück"
+    },
+    "Salted Peanut Butter": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Creamy Coconut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Matcha Raspberry": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "White Hazelnut": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    }
+   }
+  },
   {
    "id": "2661",
    "sid": "D4EL",
@@ -35,7 +88,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "4 Stück"
+     "text": "9 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -88,7 +141,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "19 Stück"
+     "text": "22 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -141,7 +194,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "17 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -194,7 +247,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "45 Stück"
+     "text": "36 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -406,7 +459,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "1 Stück"
+     "text": "2 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -454,12 +507,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "30 Stück"
+     "text": "42 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "27 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -480,9 +533,7 @@
   }
  ],
  "dm_error": null,
- "dm_unmatched": [
-  "dm Tegernseer Landstr. 64"
- ],
+ "dm_unmatched": [],
  "links": {
   "lini": "https://linisbites.com/collections/pralinis"
  },
@@ -502,8 +553,8 @@
   {
    "name": "Raspberry Almond",
    "tracked": true,
-   "count": 9,
-   "total": 9,
+   "count": 10,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -558,6 +609,12 @@
      "dist": 3.43,
      "inStock": true,
      "text": "18 Stück"
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
+     "inStock": true,
+     "text": "22 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
@@ -567,8 +624,8 @@
   {
    "name": "Salted Pistachio",
    "tracked": true,
-   "count": 9,
-   "total": 9,
+   "count": 10,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -592,7 +649,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "30 Stück"
+     "text": "42 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -623,6 +680,12 @@
      "dist": 3.43,
      "inStock": true,
      "text": "26 Stück"
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
+     "inStock": true,
+     "text": "66 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -633,25 +696,25 @@
    "name": "Salted Peanut Butter",
    "tracked": true,
    "count": 7,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
-     "text": "1 Stück"
+     "text": "2 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "23 Stück"
+     "text": "27 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -663,19 +726,19 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "45 Stück"
+     "text": "36 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "19 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "4 Stück"
+     "text": "9 Stück"
     },
     {
      "name": "dm Westendstraße 98",
@@ -686,6 +749,12 @@
     {
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -698,7 +767,7 @@
    "name": "Carrot Cake",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -751,6 +820,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -763,7 +838,7 @@
    "name": "Creamy Coconut",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -816,6 +891,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -828,7 +909,7 @@
    "name": "Matcha Raspberry",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -881,6 +962,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -893,7 +980,7 @@
    "name": "Tiramisu",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -946,6 +1033,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -958,7 +1051,7 @@
    "name": "Vanilla Cookie",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -1011,6 +1104,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -1023,7 +1122,7 @@
    "name": "White Hazelnut",
    "tracked": true,
    "count": 0,
-   "total": 9,
+   "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
@@ -1076,6 +1175,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -1132,6 +1237,46 @@
   ],
   [
    "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Tegernseer+Landstr.+64%2C+81541+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlP"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=K%C3%BChbachstra%C3%9Fe+3-9%2C+81543+M%C3%BCnchen&fields=storeId,storeNumber,address,stor"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Klenzestra%C3%9Fe+52a%2C+80469+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPa"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Lindwurmstra%C3%9Fe+95%2C+80337+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlP"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Sendlinger-Tor-Platz+11%2C+80336+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrl"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Goethestra%C3%9Fe+30%2C+80336+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPat"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Theresienh%C3%B6he+5%2C+80339+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPat"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Westendstra%C3%9Fe+98%2C+80339+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUrlPa"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=T%C3%BCbinger+Stra%C3%9Fe+3e%2C+80686+M%C3%BCnchen&fields=storeId,storeNumber,address,sto"
+  ],
+  [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/list/DE/0/10?addressPrefix=Plinganserstra%C3%9Fe+33%2C+81369+M%C3%BCnchen&fields=storeId,storeNumber,address,storeUr"
+  ],
+  [
+   "ok",
    "https://store-data-service.services.dmtech.com/stores/nearby/48.13333,11.53361/8?countryCode=DE"
   ],
   [
@@ -1143,48 +1288,52 @@
    "https://store-data-service.services.dmtech.com/stores/nearby/48.11950,11.54550/3?countryCode=DE"
   ],
   [
+   "ok",
+   "https://store-data-service.services.dmtech.com/stores/nearby/48.11850,11.58000/3?countryCode=DE"
+  ],
+  [
    "dm_stores_gefunden",
-   17
+   27
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121779/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121779/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "dm_antwort_beispiel",
-   "{\"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D0D8\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
+   "{\"D37L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4EL\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D498\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D09L\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D5A3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4KB\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D4G3\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D3A5\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", \"text\": \"Keine Information\"}, \"D53A\": {\"icon\": \"RED\", \"iconLabel\": \"Status rot\", "
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121805/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121823/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121823/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714169/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714169/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714136/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714136/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
