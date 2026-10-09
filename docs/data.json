@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T05:29:54.387602Z",
+ "updated": "2026-10-09T09:00:50.396081Z",
  "dm": [
   {
    "id": "1917",
@@ -88,7 +88,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "9 Stück"
+     "text": "4 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -141,7 +141,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "19 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -194,7 +194,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "17 Stück"
+     "text": "13 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -247,7 +247,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "36 Stück"
+     "text": "43 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -459,7 +459,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "2 Stück"
+     "text": "13 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -512,7 +512,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "27 Stück"
+     "text": "23 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -702,19 +702,19 @@
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
-     "text": "2 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "27 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "17 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -726,19 +726,19 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "36 Stück"
+     "text": "43 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "22 Stück"
+     "text": "19 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "9 Stück"
+     "text": "4 Stück"
     },
     {
      "name": "dm Westendstraße 98",
