@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T21:16:18.458362Z",
+ "updated": "2026-10-09T02:05:40.901087Z",
  "dm": [
   {
    "id": "2661",
@@ -189,12 +189,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "25 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "33 Stück"
+     "text": "45 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -610,7 +610,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "25 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -675,7 +675,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "33 Stück"
+     "text": "45 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
