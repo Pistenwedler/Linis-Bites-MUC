@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T01:43:56.550541Z",
+ "updated": "2026-10-10T08:26:00.877033Z",
  "dm": [
   {
    "id": "1917",
@@ -141,7 +141,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "15 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -237,12 +237,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "7 Stück"
+     "text": "11 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "20 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -348,7 +348,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "12 Stück"
+     "text": "13 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -401,7 +401,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "27 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -502,7 +502,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "21 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -578,7 +578,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "18 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -596,7 +596,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "7 Stück"
+     "text": "11 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -631,7 +631,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "27 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -643,7 +643,7 @@
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
      "inStock": true,
-     "text": "12 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
@@ -667,7 +667,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "18 Stück"
+     "text": "20 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -732,7 +732,7 @@
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "14 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
