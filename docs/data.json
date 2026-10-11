@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T12:41:53.210557Z",
+ "updated": "2026-10-11T18:01:58.910490Z",
  "dm": [
   {
    "id": "1917",
@@ -42,12 +42,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -95,12 +95,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -148,12 +148,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -201,12 +201,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -254,12 +254,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -307,12 +307,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -360,12 +360,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -413,12 +413,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -466,12 +466,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -519,12 +519,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -545,8 +545,8 @@
   "2975242": "Salted Pistachio",
   "1714169": "Salted Peanut Butter",
   "1714136": "Creamy Coconut",
-  "3105015": "Matcha Raspberry",
-  "3121815": "White Hazelnut"
+  "3121815": "White Hazelnut",
+  "3105015": "Matcha Raspberry"
  },
  "dm_partial": [],
  "cards": [
@@ -619,7 +619,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond",
-   "online": true
+   "online": false
   },
   {
    "name": "Salted Pistachio",
@@ -1197,7 +1197,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-spekulatius-pralinis-boxshot.jpg?v=1791535601&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-spekulatius",
-   "online": false
+   "online": true
   },
   {
    "name": "Salted Pretzel",
@@ -1339,11 +1339,11 @@
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
