@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T18:01:58.910490Z",
+ "updated": "2026-10-11T21:52:27.624892Z",
  "dm": [
   {
    "id": "1917",
@@ -1045,7 +1045,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
-   "online": true
+   "online": false
   },
   {
    "name": "Vanilla Cookie",
@@ -1197,7 +1197,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-spekulatius-pralinis-boxshot.jpg?v=1791535601&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-spekulatius",
-   "online": true
+   "online": false
   },
   {
    "name": "Salted Pretzel",
