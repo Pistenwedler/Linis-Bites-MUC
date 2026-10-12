@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T16:05:38.223488Z",
+ "updated": "2026-10-12T19:01:51.680531Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -34,7 +34,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "58 Stück"
+     "text": "54 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -82,12 +82,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "4 Stück"
+     "text": "3 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "13 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -140,7 +140,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -188,17 +188,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "21 Stück"
+     "text": "20 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "6 Stück"
+     "text": "3 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -246,12 +246,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "19 Stück"
+     "text": "13 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "25 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -299,7 +299,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -405,7 +405,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -511,7 +511,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "32 Stück"
+     "text": "31 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -564,7 +564,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -582,43 +582,43 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "32 Stück"
+     "text": "31 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "21 Stück"
+     "text": "20 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "19 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "14 Stück"
+     "text": "13 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "58 Stück"
+     "text": "54 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -659,7 +659,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -677,7 +677,7 @@
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "4 Stück"
+     "text": "3 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
@@ -718,7 +718,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "6 Stück"
+     "text": "3 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -730,7 +730,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "25 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
