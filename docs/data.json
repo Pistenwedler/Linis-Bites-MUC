@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T07:07:11.887294Z",
+ "updated": "2026-10-12T09:06:24.390290Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -145,7 +145,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "9 Stück"
+     "text": "8 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -193,12 +193,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "21 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "10 Stück"
+     "text": "9 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -251,7 +251,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "34 Stück"
+     "text": "33 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -659,7 +659,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "22 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -718,7 +718,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "10 Stück"
+     "text": "9 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -730,13 +730,13 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "34 Stück"
+     "text": "33 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "9 Stück"
+     "text": "8 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
@@ -763,9 +763,9 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-peanut-packshot-detailshot-12-box_old.jpg?v=1789022550&width=400",
-   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis-12er-box",
-   "online": true
+   "image": "",
+   "url": "",
+   "online": null
   },
   {
    "name": "Carrot Cake",
@@ -1241,7 +1241,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
-   "online": true
+   "online": false
   }
  ],
  "dm_debug": [
@@ -1355,7 +1355,7 @@
   ],
   [
    "lini_sorten",
-   13
+   12
   ]
  ]
 }
