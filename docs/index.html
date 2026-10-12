@@ -40,7 +40,7 @@ svg.tl,svg.hm{width:100%;height:auto;display:block}svg text{font:10px system-ui,
 <h1>🍫 Lini's Bites München</h1><div class="mut" id="u"></div>
 <div id="top"></div><label class="f"><input type="checkbox" id="only"> Nur verfügbare Sorten zeigen</label>
 <div id="list">lädt…</div><div id="more"></div>
-<p class="mut" style="margin-top:28px">Quelle: dm-Filialabfrage und linisbites.com. Grau heißt: dort aktuell keine Information oder nicht da. Rossmann ist pausiert.</p>
+<p class="mut" style="margin-top:28px">Quelle: dm-Filialabfrage und linisbites.com. Grau heißt: dort aktuell keine Information oder nicht da. Rossmann ist pausiert. Nachts von 22 bis 7 Uhr wird nicht abgefragt.</p>
 </main><script>
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let D=null;
@@ -58,8 +58,12 @@ function render(){
 }
 fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
  D=d;D.cards=d.cards||[];
- const age=(Date.now()-new Date(d.updated))/36e5;
- document.getElementById('u').textContent='Stand: '+new Date(d.updated).toLocaleString('de-DE');
+ // Nachtruhe: Stunden in der Ruhezeit zaehlen beim Alter nicht mit, sonst gaebe es jeden Morgen eine falsche Warnung
+ const q=d.quiet,BF=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Berlin',hour:'2-digit',hourCycle:'h23'}),bh=t=>+BF.formatToParts(t).find(p=>p.type=='hour').value%24;
+ const ruhe=h=>!!q&&q.from!=q.to&&(q.from>q.to?(h>=q.from||h<q.to):(h>=q.from&&h<q.to));
+ const t0=new Date(d.updated).getTime(),now=Date.now();let age=(now-t0)/36e5;
+ if(q&&age<14*24){age=0;for(let t=t0;t<now;t+=9e5)if(!ruhe(bh(t)))age+=Math.min(9e5,now-t)/36e5}
+ document.getElementById('u').textContent='Stand: '+new Date(d.updated).toLocaleString('de-DE')+(ruhe(bh(now))?'. Nachtruhe bis '+q.to+' Uhr, dann geht es weiter.':'');
  const n=D.cards.filter(c=>c.tracked&&c.count>0).length;
  let t='<div class="hero"><b>'+n+'</b> Sorte'+(n==1?'':'n')+' aktuell in deinen dm-Filialen verfügbar</div>';
  if(d.dm_error)t+='<div class="banner">dm-Abfrage fehlgeschlagen: '+esc(d.dm_error)+'</div>';
@@ -106,7 +110,7 @@ function drawHist(det){
   let bh=0,bs=-1;for(let a=0;a<24;a++){let s=0;for(let k=0;k<3;k++)s+=bins[bd][(a+k)%24];if(s>bs){bs=s;bh=a}}
   txt='Meist '+WD[bd]+', '+bh+'–'+((bh+3)%24)+' Uhr (nach '+cnt+' beobachteten Auffüllungen).'}
  box.innerHTML='<h3>Verlauf</h3><div class="seg">'+[7,14,30].map(r=>'<button data-r="'+r+'"'+(r==RANGE?' class="on"':'')+'>'+r+' Tage</button>').join('')+'</div>'+tl+
-  '<p class="mut" style="margin:4px 0 0">Grün = in der Filiale verfügbar. Zeitpunkt auf ca. 1 Std. genau.</p>'+
+  '<p class="mut" style="margin:4px 0 0">Grün = in der Filiale verfügbar. Zeitpunkt auf ca. 1 Std. genau, nachts erst ab 7 Uhr erkannt.</p>'+
   '<h3>Wann kommt Nachschub?</h3><svg class="hm" viewBox="0 0 '+(L+W+8)+' '+(14+7*15+2)+'" role="img" aria-label="Heatmap Wochentag und Uhrzeit">'+hm+'</svg><p class="mut" style="margin:4px 0 0">'+txt+'</p>'}
 document.getElementById('list').addEventListener('toggle',ev=>{if(ev.target.open)drawHist(ev.target)},true);
 document.getElementById('list').addEventListener('click',ev=>{const b=ev.target.closest&&ev.target.closest('button[data-r]');if(!b)return;
