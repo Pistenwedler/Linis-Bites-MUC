@@ -5,6 +5,19 @@ CENTER = (48.13333, 11.53361)  # Heimeranplatz (Wikipedia, S-/U-Bahnhof): Ausgan
 DM_BRAND_URL = "https://www.dm.de/marken/linis-bites-2349676"
 DM_FALLBACK = {"3121779": "Vanilla Cookie", "3121805": "Carrot Cake", "3121823": "Tiramisu"}
 UA = {"User-Agent": "Mozilla/5.0 (private hobby tracker)", "Accept": "application/json, text/html"}
+QUIET = (22, 7)  # Nachtruhe (deutsche Zeit, volle Stunden): von 22:00 bis 6:59 fragen Zeitplan-Laeufe nicht ab
+
+def berlin_now():
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.datetime.now(ZoneInfo("Europe/Berlin"))
+    except Exception:
+        return datetime.datetime.now()
+
+def in_quiet(hour, von=QUIET[0], bis=QUIET[1]):
+    """True, wenn die Stunde in der Nachtruhe liegt. Beispiel 22/7: 22:00 bis 6:59."""
+    if von == bis: return False
+    return (hour >= von or hour < bis) if von > bis else (von <= hour < bis)
 
 def fetch(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
@@ -260,6 +273,13 @@ def compute_events(old_cards, new_cards):
     oc = {c["name"]: c for c in old_cards}; ev = []
     for c in new_cards:
         o = oc.get(c["name"])
+        if c.get("tracked") and c["count"] > 0 and not (o and o.get("tracked")):
+            # Sorte ist neu im dm-Sortiment (vorher nur online oder ganz unbekannt) und schon in einer Filiale
+            ins = [x for x in c["stores"] if x["inStock"]]
+            shown = ", ".join(x["name"].replace("dm ", "", 1) + (f" ({x['text']})" if x.get("text") else "") for x in ins[:4])
+            more = f" und {len(ins) - 4} weitere" if len(ins) > 4 else ""
+            ev.append({"title": f"🆕 {c['name']} jetzt bei dm", "msg": f"dm: {shown}{more}", "prio": 4,
+                       "tags": ["chocolate_bar"]})
         if not o: continue
         if c.get("tracked") and o.get("tracked") and o.get("count", 0) == 0 and c["count"] > 0:
             ins = [x for x in c["stores"] if x["inStock"]]
@@ -279,8 +299,12 @@ def send_events(ev):
         for e in ev: ntfy(e["title"], e["msg"], e.get("click"), e.get("prio", 3), e.get("tags"))
 
 if __name__ == "__main__":
+    # Zeitplan-Laeufe (--auto) ruhen nachts. Per Hand gestartete Laeufe laufen immer.
+    if "--auto" in sys.argv and in_quiet(berlin_now().hour):
+        print(f"Nachtruhe ({QUIET[0]}-{QUIET[1]} Uhr): Lauf uebersprungen, nichts geaendert."); sys.exit(0)
     cfg = json.load(open("stores.json"))
-    r = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "dm": [], "dm_error": None,
+    r = {"updated": datetime.datetime.utcnow().isoformat() + "Z", "quiet": {"from": QUIET[0], "to": QUIET[1]},
+         "dm": [], "dm_error": None,
          "dm_unmatched": [], "links": {"lini": LINI + "/collections/pralinis"}}
     try:
         prods = dm_products(); r["dm_products"] = prods
