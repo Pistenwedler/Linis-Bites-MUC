@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T13:39:00.396689Z",
+ "updated": "2026-10-14T18:32:43.930780Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -34,7 +34,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "45 Stück"
+     "text": "41 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -87,12 +87,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "9 Stück"
+     "text": "18 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "18 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -140,12 +140,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "22 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "12 Stück"
+     "text": "21 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -193,12 +193,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "24 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "4 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -246,12 +246,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "17 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "16 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -294,12 +294,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "2 Stück"
+     "text": "1 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "9 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -405,7 +405,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "21 Stück"
+     "text": "19 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -453,7 +453,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "8 Stück"
+     "text": "5 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -511,12 +511,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "22 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "30 Stück"
+     "text": "28 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -564,7 +564,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "21 Stück"
+     "text": "19 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -582,43 +582,43 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "11 Stück"
+     "text": "9 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "14 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "9 Stück"
+     "text": "18 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "45 Stück"
+     "text": "41 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -641,7 +641,7 @@
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
-     "text": "8 Stück"
+     "text": "5 Stück"
     },
     {
      "name": "dm Theresienhöhe 5",
@@ -665,7 +665,7 @@
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "2 Stück"
+     "text": "1 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
@@ -712,13 +712,13 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "30 Stück"
+     "text": "28 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "11 Stück"
+     "text": "4 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -730,19 +730,19 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "23 Stück"
+     "text": "16 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "12 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "22 Stück"
+     "text": "18 Stück"
     },
     {
      "name": "dm Westendstraße 98",
@@ -763,9 +763,9 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-peanut-packshot-detailshot-12-box_old.jpg?v=1789022550&width=400",
-   "url": "https://linisbites.com/products/salted-peanut-butter-pralinis",
-   "online": true
+   "image": "",
+   "url": "",
+   "online": null
   },
   {
    "name": "Carrot Cake",
@@ -1355,7 +1355,7 @@
   ],
   [
    "lini_sorten",
-   13
+   12
   ]
  ]
 }
