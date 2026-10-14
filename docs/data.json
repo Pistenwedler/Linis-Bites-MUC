@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T07:31:34.702775Z",
+ "updated": "2026-10-14T13:39:00.396689Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -34,7 +34,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "47 Stück"
+     "text": "45 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -188,17 +188,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "10 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "28 Stück"
+     "text": "26 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "12 Stück"
+     "text": "11 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -246,12 +246,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "3 Stück"
+     "text": "26 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "23 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -506,12 +506,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "6 Stück"
+     "text": "4 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "27 Stück"
+     "text": "26 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -582,13 +582,13 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "27 Stück"
+     "text": "26 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "28 Stück"
+     "text": "26 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -600,7 +600,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "3 Stück"
+     "text": "26 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -618,7 +618,7 @@
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "47 Stück"
+     "text": "45 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -653,13 +653,13 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "6 Stück"
+     "text": "4 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "11 Stück"
+     "text": "10 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -718,7 +718,7 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "12 Stück"
+     "text": "11 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -730,7 +730,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -765,7 +765,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-peanut-packshot-detailshot-12-box_old.jpg?v=1789022550&width=400",
    "url": "https://linisbites.com/products/salted-peanut-butter-pralinis",
-   "online": false
+   "online": true
   },
   {
    "name": "Carrot Cake",
@@ -1049,7 +1049,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
-   "online": false
+   "online": true
   },
   {
    "name": "Vanilla Cookie",
