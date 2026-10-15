@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T18:32:43.930780Z",
+ "updated": "2026-10-15T07:21:34.228276Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -27,14 +27,14 @@
      "text": ""
     },
     "Raspberry Almond": {
-     "inStock": true,
+     "inStock": false,
      "level": null,
-     "text": "3 Stück"
+     "text": ""
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "41 Stück"
+     "text": "40 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -246,12 +246,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "17 Stück"
+     "text": "16 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -600,7 +600,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "17 Stück"
+     "text": "16 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -618,7 +618,7 @@
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "41 Stück"
+     "text": "40 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -628,7 +628,7 @@
   {
    "name": "Raspberry Almond",
    "tracked": true,
-   "count": 8,
+   "count": 7,
    "total": 10,
    "stores": [
     {
@@ -674,12 +674,6 @@
      "text": "1 Stück"
     },
     {
-     "name": "dm Tegernseer Landstr. 64",
-     "dist": 3.96,
-     "inStock": true,
-     "text": "3 Stück"
-    },
-    {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": false,
@@ -688,6 +682,12 @@
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
+     "inStock": false,
+     "text": ""
+    },
+    {
+     "name": "dm Tegernseer Landstr. 64",
+     "dist": 3.96,
      "inStock": false,
      "text": ""
     }
@@ -730,7 +730,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -1049,7 +1049,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
-   "online": true
+   "online": false
   },
   {
    "name": "Vanilla Cookie",
@@ -1231,7 +1231,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco",
-   "online": true
+   "online": false
   },
   {
    "name": "Brownie Caramel",
