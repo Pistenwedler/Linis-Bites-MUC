@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T12:23:26.442255Z",
+ "updated": "2026-10-16T17:22:18.716927Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -26,10 +26,15 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "38 Stück"
+     "text": "40 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -47,11 +52,6 @@
      "text": ""
     },
     "Matcha Raspberry": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Raspberry Almond": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -79,6 +79,11 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
@@ -100,11 +105,6 @@
      "text": ""
     },
     "Matcha Raspberry": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Raspberry Almond": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -132,6 +132,11 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
@@ -153,11 +158,6 @@
      "text": ""
     },
     "Matcha Raspberry": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Raspberry Almond": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -185,6 +185,11 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "10 Stück"
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
@@ -209,11 +214,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "10 Stück"
     }
    }
   },
@@ -238,15 +238,20 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "1 Stück"
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "5 Stück"
+     "text": "6 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "2 Stück"
+     "text": "5 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -262,11 +267,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "1 Stück"
     }
    }
   },
@@ -290,6 +290,11 @@
      "inStock": false,
      "level": null,
      "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "1 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -315,11 +320,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "1 Stück"
     }
    }
   },
@@ -343,6 +343,11 @@
      "inStock": false,
      "level": null,
      "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "17 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -368,11 +373,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "17 Stück"
     }
    }
   },
@@ -393,6 +393,11 @@
      "text": ""
     },
     "Tiramisu": {
+     "inStock": false,
+     "level": null,
+     "text": ""
+    },
+    "Raspberry Almond": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -418,11 +423,6 @@
      "text": ""
     },
     "Matcha Raspberry": {
-     "inStock": false,
-     "level": null,
-     "text": ""
-    },
-    "Raspberry Almond": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -450,10 +450,15 @@
      "level": null,
      "text": ""
     },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "3 Stück"
+    },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "10 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -474,11 +479,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "3 Stück"
     }
    }
   },
@@ -502,6 +502,11 @@
      "inStock": false,
      "level": null,
      "text": ""
+    },
+    "Raspberry Almond": {
+     "inStock": true,
+     "level": null,
+     "text": "26 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -527,11 +532,6 @@
      "inStock": false,
      "level": null,
      "text": ""
-    },
-    "Raspberry Almond": {
-     "inStock": true,
-     "level": null,
-     "text": "26 Stück"
     }
    }
   }
@@ -545,12 +545,12 @@
   "3121779": "Vanilla Cookie",
   "3121805": "Carrot Cake",
   "3121823": "Tiramisu",
+  "1714108": "Raspberry Almond",
   "2975242": "Salted Pistachio",
   "1714169": "Salted Peanut Butter",
   "1714136": "Creamy Coconut",
   "3121815": "White Hazelnut",
-  "3105015": "Matcha Raspberry",
-  "1714108": "Raspberry Almond"
+  "3105015": "Matcha Raspberry"
  },
  "dm_partial": [],
  "cards": [
@@ -570,7 +570,7 @@
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
-     "text": "22 Stück"
+     "text": "10 Stück"
     },
     {
      "name": "dm Theresienhöhe 5",
@@ -600,7 +600,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "5 Stück"
+     "text": "6 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -618,7 +618,7 @@
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "38 Stück"
+     "text": "40 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
@@ -659,7 +659,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "2 Stück"
+     "text": "5 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -1327,6 +1327,10 @@
   ],
   [
    "ok",
+   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+  ],
+  [
+   "ok",
    "https://products.dm.de/availability/api/v2/map/basic/DE/2975242/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
@@ -1344,10 +1348,6 @@
   [
    "ok",
    "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
-  ],
-  [
-   "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/1714108/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
