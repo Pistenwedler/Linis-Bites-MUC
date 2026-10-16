@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T07:05:06.990119Z",
+ "updated": "2026-10-16T12:23:26.442255Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -1231,7 +1231,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco",
-   "online": true
+   "online": false
   },
   {
    "name": "Brownie Caramel",
