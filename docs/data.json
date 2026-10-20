@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T05:58:10.472233Z",
+ "updated": "2026-10-20T11:27:49.967569Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -621,7 +621,7 @@
      "text": "32 Stück"
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pistachio-packshot-detailshot-12-box.jpg?v=1783949102&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-salted-pistachio-pralinis-packshot-box.jpg?v=1792477474&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
    "online": true
   },
@@ -692,7 +692,7 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-raspberry-almond-packshot-detailshot-12-box.jpg?v=1783949078&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-raspberry-almond-pralinis-packshot-box.jpg?v=1792477497&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond",
    "online": true
   },
@@ -905,9 +905,9 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-creamy-coconut-packshot-detailshot-12-box.jpg?v=1783949114&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-creamy-coconut-pralinis-packshot-box.jpg?v=1792477447&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut",
-   "online": false
+   "online": true
   },
   {
    "name": "Matcha Raspberry",
@@ -976,7 +976,7 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-matcha-raspberry-packshot-detailshot-12-box.jpg?v=1783949123&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-matcha-raspberry-pralinis-packshot-box.jpg?v=1792477504&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-matcha-raspberry",
    "online": true
   },
@@ -1047,9 +1047,9 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-tiramisu-packshot-detailshot-12-box.jpg?v=1783949131&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-tiramisu-pralinis-packshot-box.jpg?v=1792477489&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
-   "online": false
+   "online": true
   },
   {
    "name": "Vanilla Cookie",
@@ -1118,7 +1118,7 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-vanilla-cookie-packshot-detailshot-12-box.jpg?v=1783949092&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-vanilla-cookie-pralinis-packshot-box.jpg?v=1792477481&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie",
    "online": true
   },
@@ -1189,7 +1189,7 @@
      "text": ""
     }
    ],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-white-hazelnut-packshot-detailshot-12-box.jpg?v=1783949140&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-white-hazelnut-pralinis-packshot-box.jpg?v=1792477530&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-white-hazelnut-community-edition",
    "online": true
   },
@@ -1210,7 +1210,7 @@
    "total": 0,
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-salted-pretzel-packshot-detailshot-12-box.jpg?v=1788519371&width=400",
-   "url": "https://linisbites.com/products/bio-pralinis-salted-pretzel-12er-box",
+   "url": "https://linisbites.com/products/bio-pralinis-salted-pretzel",
    "online": false
   },
   {
@@ -1219,7 +1219,7 @@
    "count": 0,
    "total": 0,
    "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-white-coconut-packshot-detailshot-12-box.jpg?v=1783949098&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-white-coconut-pralinis-packshot-box.jpg?v=1792477439&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-white-coconut",
    "online": true
   },
@@ -1229,9 +1229,9 @@
    "count": 0,
    "total": 0,
    "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-hazelnut-choco-packshot-detailshot-12-box_2.jpg?v=1787214433&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-hazelnut-choco-pralinis-packshot-box.jpg?v=1792477465&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-hazelnut-choco",
-   "online": false
+   "online": true
   },
   {
    "name": "Brownie Caramel",
@@ -1239,7 +1239,7 @@
    "count": 0,
    "total": 0,
    "stores": [],
-   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-pralinis-brownie-caramel-packshot-detailshot-12-box.jpg?v=1783949119&width=400",
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/inis-bites-energy-balls-brownie-caramel-pralinis-packshot-box.jpg?v=1792477456&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
    "online": true
   }
