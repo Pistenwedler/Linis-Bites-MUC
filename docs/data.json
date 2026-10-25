@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T16:07:04.535782Z",
+ "updated": "2026-10-25T19:02:52.878319Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -140,7 +140,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "21 Stück"
+     "text": "20 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -246,7 +246,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "22 Stück"
+     "text": "21 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -352,7 +352,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "24 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -647,7 +647,7 @@
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -665,13 +665,13 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "22 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "21 Stück"
+     "text": "20 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
