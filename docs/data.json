@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T06:05:50.076813Z",
+ "updated": "2026-10-26T12:58:25.831248Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -198,7 +198,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "20 Stück"
+     "text": "19 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -251,7 +251,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "11 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -304,7 +304,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "3 Stück"
+     "text": "2 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -463,7 +463,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -516,7 +516,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "24 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -706,31 +706,31 @@
      "name": "dm Tübinger Straße 3e",
      "dist": 0.75,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "20 Stück"
+     "text": "19 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "3 Stück"
+     "text": "2 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "11 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -1201,7 +1201,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-spekulatius-pralinis-boxshot.jpg?v=1791535601&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-spekulatius",
-   "online": true
+   "online": false
   },
   {
    "name": "Salted Pretzel",
@@ -1241,7 +1241,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/inis-bites-energy-balls-brownie-caramel-pralinis-packshot-box.jpg?v=1792477456&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
-   "online": true
+   "online": false
   }
  ],
  "dm_debug": [
