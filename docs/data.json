@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T12:58:25.831248Z",
+ "updated": "2026-10-26T19:13:51.080614Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -29,12 +29,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "12 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "33 Stück"
+     "text": "30 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -82,12 +82,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "21 Stück"
+     "text": "18 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "10 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -135,17 +135,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "28 Stück"
+     "text": "39 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "20 Stück"
+     "text": "18 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "35 Stück"
+     "text": "28 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -188,12 +188,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "22 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -241,17 +241,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "28 Stück"
+     "text": "26 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "21 Stück"
+     "text": "24 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "16 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -294,12 +294,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "15 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "14 Stück"
+     "text": "12 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -347,12 +347,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "3 Stück"
+     "text": "12 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "21 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -400,12 +400,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "21 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -506,17 +506,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "10 Stück"
+     "text": "17 Stück"
     },
     "Salted Pistachio": {
-     "inStock": false,
+     "inStock": true,
      "level": null,
-     "text": ""
+     "text": "10 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -564,7 +564,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "23 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -576,49 +576,49 @@
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
      "inStock": true,
-     "text": "3 Stück"
+     "text": "12 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "10 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "18 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "28 Stück"
+     "text": "26 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "28 Stück"
+     "text": "39 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "21 Stück"
+     "text": "18 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "12 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-raspberry-almond-pralinis-packshot-box.jpg?v=1792477497&width=400",
@@ -628,14 +628,14 @@
   {
    "name": "Salted Pistachio",
    "tracked": true,
-   "count": 9,
+   "count": 10,
    "total": 10,
    "stores": [
     {
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -647,49 +647,49 @@
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "21 Stück"
+    },
+    {
+     "name": "dm Plinganserstraße 33",
+     "dist": 1.73,
+     "inStock": true,
+     "text": "10 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "14 Stück"
+     "text": "12 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "21 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "20 Stück"
+     "text": "18 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "10 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
      "dist": 3.96,
      "inStock": true,
-     "text": "33 Stück"
-    },
-    {
-     "name": "dm Plinganserstraße 33",
-     "dist": 1.73,
-     "inStock": false,
-     "text": ""
+     "text": "30 Stück"
     }
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-salted-pistachio-pralinis-packshot-box.jpg?v=1792477474&width=400",
@@ -712,7 +712,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -730,13 +730,13 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "11 Stück"
+     "text": "16 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "35 Stück"
+     "text": "28 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
@@ -1201,7 +1201,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-spekulatius-pralinis-boxshot.jpg?v=1791535601&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-spekulatius",
-   "online": false
+   "online": true
   },
   {
    "name": "Salted Pretzel",
@@ -1241,7 +1241,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/inis-bites-energy-balls-brownie-caramel-pralinis-packshot-box.jpg?v=1792477456&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
-   "online": false
+   "online": true
   }
  ],
  "dm_debug": [
