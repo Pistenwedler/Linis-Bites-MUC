@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T19:13:51.080614Z",
+ "updated": "2026-10-27T10:29:00.460744Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -92,7 +92,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "10 Stück"
+     "text": "22 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -251,7 +251,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -516,7 +516,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "22 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -712,7 +712,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "23 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -730,7 +730,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
@@ -742,7 +742,7 @@
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "10 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Westendstraße 98",
