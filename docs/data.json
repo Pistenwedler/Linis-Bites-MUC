@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T16:32:11.036566Z",
+ "updated": "2026-10-28T08:22:14.907240Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -82,7 +82,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "23 Stück"
+     "text": "22 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -135,12 +135,12 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "34 Stück"
+     "text": "32 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "15 Stück"
+     "text": "27 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -188,7 +188,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "12 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -198,7 +198,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "17 Stück"
+     "text": "16 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -241,17 +241,17 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "15 Stück"
+     "text": "10 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "19 Stück"
+     "text": "37 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "9 Stück"
+     "text": "15 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -294,7 +294,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "13 Stück"
+     "text": "12 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -506,7 +506,7 @@
     "Raspberry Almond": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "27 Stück"
     },
     "Salted Pistachio": {
      "inStock": true,
@@ -516,7 +516,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "20 Stück"
+     "text": "19 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -582,37 +582,37 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "27 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "12 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "13 Stück"
+     "text": "12 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "15 Stück"
+     "text": "10 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "34 Stück"
+     "text": "32 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "23 Stück"
+     "text": "22 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
@@ -671,13 +671,13 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "19 Stück"
+     "text": "37 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "15 Stück"
+     "text": "27 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
@@ -712,13 +712,13 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "20 Stück"
+     "text": "19 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "17 Stück"
+     "text": "16 Stück"
     },
     {
      "name": "dm Goethestraße 30",
@@ -730,7 +730,7 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "9 Stück"
+     "text": "15 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
