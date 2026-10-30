@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T20:15:03.800683Z",
+ "updated": "2026-10-30T07:02:56.681890Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -46,12 +46,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -99,12 +99,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -152,12 +152,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -205,12 +205,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -258,12 +258,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -311,12 +311,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -364,12 +364,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -405,7 +405,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "30 Stück"
+     "text": "29 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -417,12 +417,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -470,12 +470,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -523,12 +523,12 @@
      "level": null,
      "text": ""
     },
-    "Matcha Raspberry": {
+    "White Hazelnut": {
      "inStock": false,
      "level": null,
      "text": ""
     },
-    "White Hazelnut": {
+    "Matcha Raspberry": {
      "inStock": false,
      "level": null,
      "text": ""
@@ -549,8 +549,8 @@
   "2975242": "Salted Pistachio",
   "1714169": "Salted Peanut Butter",
   "1714136": "Creamy Coconut",
-  "3105015": "Matcha Raspberry",
-  "3121815": "White Hazelnut"
+  "3121815": "White Hazelnut",
+  "3105015": "Matcha Raspberry"
  },
  "dm_partial": [],
  "cards": [
@@ -564,7 +564,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "30 Stück"
+     "text": "29 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -1343,11 +1343,11 @@
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
-   "https://products.dm.de/availability/api/v2/map/basic/DE/3121815/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
+   "https://products.dm.de/availability/api/v2/map/basic/DE/3105015/D37L,D4EL,D498,D09L,D5A3,D4KB,D4G3,D3A5,D53A,D0D8"
   ],
   [
    "ok",
