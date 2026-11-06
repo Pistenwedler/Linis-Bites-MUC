@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T15:25:22.847429Z",
+ "updated": "2026-11-06T10:45:22.100622Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -87,12 +87,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "25 Stück"
+     "text": "21 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "17 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -140,12 +140,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "31 Stück"
+     "text": "29 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -193,7 +193,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "26 Stück"
+     "text": "17 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -246,12 +246,12 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "11 Stück"
+     "text": "35 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "7 Stück"
+     "text": "12 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -299,7 +299,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "19 Stück"
+     "text": "18 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": true,
@@ -352,7 +352,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "8 Stück"
+     "text": "5 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -405,7 +405,7 @@
     "Salted Pistachio": {
      "inStock": true,
      "level": null,
-     "text": "27 Stück"
+     "text": "24 Stück"
     },
     "Salted Peanut Butter": {
      "inStock": false,
@@ -516,7 +516,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "7 Stück"
+     "text": "19 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -564,7 +564,7 @@
      "name": "dm Westendstraße 98",
      "dist": 0.6,
      "inStock": true,
-     "text": "27 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Tübinger Straße 3e",
@@ -576,7 +576,7 @@
      "name": "dm Theresienhöhe 5",
      "dist": 1.13,
      "inStock": true,
-     "text": "8 Stück"
+     "text": "5 Stück"
     },
     {
      "name": "dm Plinganserstraße 33",
@@ -588,31 +588,31 @@
      "name": "dm Lindwurmstraße 95",
      "dist": 1.83,
      "inStock": true,
-     "text": "26 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Goethestraße 30",
      "dist": 1.86,
      "inStock": true,
-     "text": "19 Stück"
+     "text": "18 Stück"
     },
     {
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "11 Stück"
+     "text": "35 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "31 Stück"
+     "text": "29 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "25 Stück"
+     "text": "21 Stück"
     },
     {
      "name": "dm Tegernseer Landstr. 64",
@@ -712,7 +712,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "7 Stück"
+     "text": "19 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -730,19 +730,19 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "7 Stück"
+     "text": "12 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "24 Stück"
+     "text": "23 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "18 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Westendstraße 98",
@@ -1120,7 +1120,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-vanilla-cookie-pralinis-packshot-box.jpg?v=1792477481&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie",
-   "online": false
+   "online": true
   },
   {
    "name": "White Hazelnut",
