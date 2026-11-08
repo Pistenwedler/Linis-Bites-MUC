@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T15:05:57.431911Z",
+ "updated": "2026-11-08T19:40:04.762004Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -907,7 +907,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-creamy-coconut-pralinis-packshot-box.jpg?v=1792477447&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-creamy-coconut",
-   "online": true
+   "online": false
   },
   {
    "name": "Matcha Raspberry",
