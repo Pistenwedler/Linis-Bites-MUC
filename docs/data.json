@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T11:01:35.547902Z",
+ "updated": "2026-11-16T20:57:51.018131Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -92,7 +92,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "7 Stück"
+     "text": "17 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -145,7 +145,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -251,7 +251,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "18 Stück"
+     "text": "10 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -516,7 +516,7 @@
     "Salted Peanut Butter": {
      "inStock": true,
      "level": null,
-     "text": "25 Stück"
+     "text": "24 Stück"
     },
     "Creamy Coconut": {
      "inStock": false,
@@ -694,7 +694,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-salted-pistachio-pralinis-packshot-box.jpg?v=1792477474&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-salted-pistachio",
-   "online": false
+   "online": true
   },
   {
    "name": "Salted Peanut Butter",
@@ -712,7 +712,7 @@
      "name": "dm Plinganserstraße 33",
      "dist": 1.73,
      "inStock": true,
-     "text": "25 Stück"
+     "text": "24 Stück"
     },
     {
      "name": "dm Lindwurmstraße 95",
@@ -730,19 +730,19 @@
      "name": "dm Sendlinger-Tor-Platz 11",
      "dist": 2.47,
      "inStock": true,
-     "text": "18 Stück"
+     "text": "10 Stück"
     },
     {
      "name": "dm Klenzestraße 52a",
      "dist": 2.82,
      "inStock": true,
-     "text": "16 Stück"
+     "text": "14 Stück"
     },
     {
      "name": "dm Kühbachstraße 3-9",
      "dist": 3.43,
      "inStock": true,
-     "text": "7 Stück"
+     "text": "17 Stück"
     },
     {
      "name": "dm Westendstraße 98",
@@ -1120,7 +1120,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-vanilla-cookie-pralinis-packshot-box.jpg?v=1792477481&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-vanilla-cookie",
-   "online": false
+   "online": true
   },
   {
    "name": "White Hazelnut",
@@ -1191,7 +1191,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-white-hazelnut-pralinis-packshot-box.jpg?v=1792477530&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-white-hazelnut-community-edition",
-   "online": true
+   "online": false
   },
   {
    "name": "Spekulatius",
@@ -1201,7 +1201,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-spekulatius-pralinis-boxshot.jpg?v=1791535601&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-spekulatius",
-   "online": false
+   "online": true
   },
   {
    "name": "Salted Pretzel",
@@ -1241,7 +1241,7 @@
    "stores": [],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/inis-bites-energy-balls-brownie-caramel-pralinis-packshot-box.jpg?v=1792477456&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-brownie-caramel",
-   "online": false
+   "online": true
   },
   {
    "name": "Sweet Summer Bundle",
