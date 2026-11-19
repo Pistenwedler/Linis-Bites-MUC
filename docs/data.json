@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:53:02.893339Z",
+ "updated": "2026-11-19T12:55:03.015451Z",
  "quiet": {
   "from": 22,
   "to": 7
@@ -623,7 +623,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-raspberry-almond-pralinis-packshot-box.jpg?v=1792477497&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-raspberry-almond",
-   "online": false
+   "online": true
   },
   {
    "name": "Salted Pistachio",
@@ -1049,7 +1049,7 @@
    ],
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-energy-balls-tiramisu-pralinis-packshot-box.jpg?v=1792477489&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-tiramisu",
-   "online": false
+   "online": true
   },
   {
    "name": "Vanilla Cookie",
@@ -1252,6 +1252,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/linis-bites-bio-pralinis-sweet-summer-bundle-main-shot-trays.jpg?v=1793874399&width=400",
    "url": "https://linisbites.com/products/bio-pralinis-sweet-summer-bundle",
    "online": false
+  },
+  {
+   "name": "\"The Original\" Box",
+   "tracked": false,
+   "count": 0,
+   "total": 0,
+   "stores": [],
+   "image": "https://cdn.shopify.com/s/files/1/0080/9726/7810/files/pralinis-the-original-box-main-shot.jpg?v=1794995274&width=400",
+   "url": "https://linisbites.com/products/bio-pralinis-the-original-box-4er-box",
+   "online": true
   }
  ],
  "dm_debug": [
@@ -1365,7 +1375,7 @@
   ],
   [
    "lini_sorten",
-   14
+   15
   ]
  ]
 }
